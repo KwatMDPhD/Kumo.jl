@@ -1,21 +1,25 @@
 struct Cell end
 
 struct NucleatedCell <: Cell
-    MHC1::Any
+    mhc1::MHC1
 end
 
 struct Neutrophil <: NucleatedCell
-    CD16::Any
-    CXCR1::Any
-    CXCR2::Any
+    ::CD16
+    ::CXCR1
+    ::CXCR2
 end
 
 struct Macrophage <: NucleatedCell
-    CD16::Any
+    ::CD16
+end
+
+function work(::Macrophage)
+    IL8()
 end
 
 struct NaturalKillerCell <: NucleatedCell
-    CD16::Any
+    ::CD16
 end
 
 struct TCell <: NucleatedCell end
@@ -29,5 +33,8 @@ struct THelper1 <: CD4T end
 struct THelper2 <: CD4T end
 
 struct CD8T <: NucleatedCell end
+function work(::CD8T, cell::Cell)
+    return apoptosis(cell)
+end
 
 struct BCell <: Cell end
