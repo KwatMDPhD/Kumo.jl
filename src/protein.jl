@@ -12,15 +12,15 @@ struct CXCR1 <: CXCR end
 struct CXCR2 <: CXCR end
 
 struct IgM
-    FC
+    FC::Any
 end
 
 struct IgE
-    FC
+    FC::Any
 end
 
 struct IgG
-    FC
+    FC::Any
 end
 
 struct MHC1 end
