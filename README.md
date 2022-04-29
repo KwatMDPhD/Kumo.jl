@@ -473,7 +473,6 @@ CD16 .@ FC (low affinity)
 
 MatureB.(CD19, CD20, CD21)
 
-
 ## Serum sickness = T3H
 
 (C3a, C5a) rec (Macrophage, Neutrohil) make more permiable too
@@ -483,8 +482,7 @@ MatureB.(CD19, CD20, CD21)
 Mastcell .^ IL5
 IL5 ^ IgA swithc
 
-
-## 
+##
 
 RANTES recruites T, eosino, basohik. but NOT neutorhil
 
@@ -494,16 +492,12 @@ PolymericImmunoglobulinReceptor .@ IgA => Secretory IgA
 
 ## paroxysmal nocturnal hemolglobinuia
 
-RBC @ GPI  @ (CD55 & CD59) v Complement deposition 
-
-
+RBC @ GPI @ (CD55 & CD59) v Complement deposition
 
 ## Th17
 
 Th17 ^ IL17
 IL17 ^ Neutrophil (proliferation & migration)
-
-
 
 ##
 
@@ -514,7 +508,6 @@ IL17 ^ Neutrophil (proliferation & migration)
 Glucocorticoid ^ Treg
 
 Treg v Macrophage function, MHC2
-
 
 IgM is the most efficient at complement (classic i guess)
 
@@ -530,7 +523,7 @@ APC.B7
 
 T.CD28
 
-CD28 * B7 = Costimulation
+CD28 \* B7 = Costimulation
 
 1st trimester >> t maturaion in thymus
 
@@ -538,7 +531,7 @@ CD28 * B7 = Costimulation
 
 Th2 -> IL5
 
-IgG, IgA ! Parasite (mucosal or blood) 
+IgG, IgA ! Parasite (mucosal or blood)
 
 Eo -> MajorBasicProtein, ROS==== example of ADCC
 
@@ -552,12 +545,9 @@ Eo also regulate T1H
 
 TLR >> NFkB >> TNFa, IL1, IL6, IL12
 
-
 Mannose-binding lectin >> Lectin compolement pathway
 
-
-
-## 
+##
 
 B cell is a APC
 
@@ -582,7 +572,6 @@ GMCSF => HSC -> (Granulocyte, macro)
 
 Virus -> IFa => v Mac
 
-
 ##
 
 IgE R aggregation => degranulates
@@ -592,7 +581,6 @@ IgE R aggregation => degranulates
 T, memory
 
 Infants have poor humoral immunity; vacciantew ith capcule later or conjugate
-
 
 ##
 
@@ -608,12 +596,12 @@ Minutes aftr exposure >> IgE Mast Cell >> Early-phase type 1
 2 to 10 hours afer >> Late-phase type 1 >> Th2 >> IL5 >> activate eosinohil >> MBP, Eosinophilic peroxidase >> Tissue damage
 
 ##
-Multinucleated Langhans giant cell 
 
-## 
+Multinucleated Langhans giant cell
+
+##
 
 Pathogens that escape from phagosome, like Listeria and Rickettsia, are processed by, instead of lysosomes, proteasome.
-
 
 ##
 
@@ -621,13 +609,7 @@ Macrophage has CD14 which binds to LPS.
 
 NK has CD16 which binds to IgG FC and cause ADCC.
 
-
 B7 IS THE SAME AS CD80CD86; these activate T CD28. CTLA4 completes with CD28 for the binding.
-
-
-
-
-
 
 ##
 
@@ -636,7 +618,6 @@ Capsules are hydrophobic, making engulfing difficult.
 Capsules hide antigens targetted by the Igs.
 
 C3 lands on capsule, without any removal, amplifies, and runs the alternate complement pathway, leading to important MAC.
-
 
 10% lymphocyte = NK
 
@@ -647,8 +628,6 @@ NK.CD56 OR .CD16
 (IFg, IL12) >>> NK
 
 NK >> KILL Low MHC1 Cell
-
-
 
 ##
 
@@ -672,7 +651,7 @@ IL17 increases TNFa and prostaglandings, which together erode and mess bones.
 IL2 v IL17
 IL4 v IL17
 
-## 
+##
 
 CD4T + FOXP3 --> Treg --> (TGFb, CTLA4, IL10)
 
@@ -690,9 +669,36 @@ Glucose v (IL10, Fibroblast migration)
 
 Glucose ^ (inflammatory cytokine)
 
-
 (Endothelial cell, Macrophage, Platelet) ^ Bradykinin
 
 ##
 
 RNase v mRNA
+
+## New day
+
+(CD55, CD59) inactivates autoactivating surface compelment
+
+HSC with CD55 and CD59 mutation ==> paroxysmal nurturnal hemoglobinuria
+
+##
+
+(NK, T) ^ IFg >> @ Macrophage >> JAK1/2 >> STAT1 >> mRNA!! >> Intracellular killing
+
+IL4 ==> IgE
+IL5 ==> IgA
+
+Mast cell ==> Prostaglandin
+
+Eosinophil, mast cell @ tissue in ppl with t1h
+
+##
+
+(cJun, cFox) @ TF
+
+Ras = GProtein that amplifies the signal >> MAP kinase signaling
+
+Gs => b1 adrenergic receptor
+Adenyl cyclase cleaves ATP to form cAMP ==> Protein kinase A
+
+(NeuralCrest cell, melanocyte, Schwann cell, Langerhans cell, Dendritic cell).S100
