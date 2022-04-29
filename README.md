@@ -659,3 +659,40 @@ T3H complex like to go to basement membrane of skin kidneys, and joints, and sma
 Immune complex with IgG >> C3b >> (RBC,WBC).CR1 >> reticuloendothelial monocnucelar phagotyfes (Kupffer cell, splenic macrophage)
 OR, the Macs (with CD16) can directly bind to IgGo
 Too much? Serum sickness.
+
+BTK + PreB = PreB exiting the marrow
+
+IgG2 v Encapsualted bacteria by opsonizaiton
+
+##
+
+Abnormal intestinal microbiome increases Th1 and Th17.
+IL17 increases TNFa and prostaglandings, which together erode and mess bones.
+
+IL2 v IL17
+IL4 v IL17
+
+## 
+
+CD4T + FOXP3 --> Treg --> (TGFb, CTLA4, IL10)
+
+TGFb ^ CD4T's FOXP3
+TGFb v Activated B
+IL10 v MHC2 expression
+
+CD80/86 is needed for both CD4+ and CD8+ costimulation.
+
+##
+
+IL10 ^ Fibroblast
+
+Glucose v (IL10, Fibroblast migration)
+
+Glucose ^ (inflammatory cytokine)
+
+
+(Endothelial cell, Macrophage, Platelet) ^ Bradykinin
+
+##
+
+RNase v mRNA
