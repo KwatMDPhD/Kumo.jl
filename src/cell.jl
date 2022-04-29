@@ -28,6 +28,6 @@ struct THelper1 <: CD4T end
 
 struct THelper2 <: CD4T end
 
-struct CD8T <: TCell end
+struct CD8T <: NucleatedCell end
 
 struct BCell <: Cell end
