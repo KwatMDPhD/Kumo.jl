@@ -2,17 +2,7 @@
 
 Let's see how far this goes
 
-## Kinin
-
-Bradykinin >> (Blood vessle ^ (Dilation & Permeability) & Nonvascular smooth muscle ^ & ($ ^ Pain))
-
-## Granulocyte
-
 E v Parasite
-
-CD16 @ M
-
-CD16 @ FC
 
 (Th1 & Th17) v Candida albicans mucocutaneous infection
 
@@ -20,13 +10,9 @@ N v Candida albicans invasion
 
 ## Chemotaxis
 
-CXCR1CXCR2 @ N
-
-M ^ IL8 >> $ @ CXCR1CXCR2 >> (N @ M) & (N ^)
-
 IL8 > Chemotaxis
 
-N.LSelectin
+N.LSelectin (CD62L)
 EndothelialCell.ESelectin
 EndothelialCell.PSelectin
 EndothelialCell.PECAM1
@@ -357,8 +343,6 @@ Collagenase
 
 ## Th0
 
-Th0 + IL12 = Th1
-
 Th1 ^ (IL2, IFg, LymphotoxinBeta)
 
 Th2 ^ (IL4, IL5, IL10, IL13)
@@ -476,3 +460,202 @@ C1 .@ IgM
 C1 CLEAVES C4 and C2.
 
 ALternative pathway: small amont of C3 auto C3a and C3b, but inactivated by self cell.
+
+##
+
+Granulocyte.CD15
+
+NK.CD16
+Neu.CD16
+Mac.CD16
+
+CD16 .@ FC (low affinity)
+
+MatureB.(CD19, CD20, CD21)
+
+
+## Serum sickness = T3H
+
+(C3a, C5a) rec (Macrophage, Neutrohil) make more permiable too
+
+##
+
+Mastcell .^ IL5
+IL5 ^ IgA swithc
+
+
+## 
+
+RANTES recruites T, eosino, basohik. but NOT neutorhil
+
+## iga
+
+PolymericImmunoglobulinReceptor .@ IgA => Secretory IgA
+
+## paroxysmal nocturnal hemolglobinuia
+
+RBC @ GPI  @ (CD55 & CD59) v Complement deposition 
+
+
+
+## Th17
+
+Th17 ^ IL17
+IL17 ^ Neutrophil (proliferation & migration)
+
+
+
+##
+
+(Mast cell, Eosinophil) .^ (Leukotriene C4, D4, and E4)
+
+##
+
+Glucocorticoid ^ Treg
+
+Treg v Macrophage function, MHC2
+
+
+IgM is the most efficient at complement (classic i guess)
+
+##
+
+TNFa .^ (Granuloma, Macrophage, Neutrophil)
+
+##
+
+B7 .@ CTLA4
+
+APC.B7
+
+T.CD28
+
+CD28 * B7 = Costimulation
+
+1st trimester >> t maturaion in thymus
+
+## Eo
+
+Th2 -> IL5
+
+IgG, IgA ! Parasite (mucosal or blood) 
+
+Eo -> MajorBasicProtein, ROS==== example of ADCC
+
+Eosinophil.MHC2 (wow you can phago? cool)
+
+Eo also regulate T1H
+
+##
+
+(Macro, Dendritic).(DAMP, PAMP)
+
+TLR >> NFkB >> TNFa, IL1, IL6, IL12
+
+
+Mannose-binding lectin >> Lectin compolement pathway
+
+
+
+## 
+
+B cell is a APC
+
+IL5 ^ IgA switch
+IL5 ^ Th2
+
+IL1 + Th0 => (Th1, Th2)
+IL1 => Fever
+
+Th1 => IL2 => CD4, CD8, B
+Th => IL3
+
+IL10 v IFg => v Th1
+
+Mac => IL12
+
+TB => Mac => Can't kill intra => APC => Th1 => IFg => ^^Mac => Epithelioid, Giant cell => Caseating granuloma
+
+C3a => Mast cell degranulaio
+
+GMCSF => HSC -> (Granulocyte, macro)
+
+Virus -> IFa => v Mac
+
+
+##
+
+IgE R aggregation => degranulates
+
+## Conjugate vac
+
+T, memory
+
+Infants have poor humoral immunity; vacciantew ith capcule later or conjugate
+
+
+##
+
+Complement C3b and IgG >>> Phagocytosis
+IgM >>> Complement
+
+## ADCC
+
+NK
+Eo >> MBP
+
+Minutes aftr exposure >> IgE Mast Cell >> Early-phase type 1
+2 to 10 hours afer >> Late-phase type 1 >> Th2 >> IL5 >> activate eosinohil >> MBP, Eosinophilic peroxidase >> Tissue damage
+
+##
+Multinucleated Langhans giant cell 
+
+## 
+
+Pathogens that escape from phagosome, like Listeria and Rickettsia, are processed by, instead of lysosomes, proteasome.
+
+
+##
+
+Macrophage has CD14 which binds to LPS.
+
+NK has CD16 which binds to IgG FC and cause ADCC.
+
+
+B7 IS THE SAME AS CD80CD86; these activate T CD28. CTLA4 completes with CD28 for the binding.
+
+
+
+
+
+
+##
+
+Capsules are negatively charged, repelling phagocyte negative surface.
+Capsules are hydrophobic, making engulfing difficult.
+Capsules hide antigens targetted by the Igs.
+
+C3 lands on capsule, without any removal, amplifies, and runs the alternate complement pathway, leading to important MAC.
+
+
+10% lymphocyte = NK
+
+NK.perforins >> hole
+NK.granzymes >> hole >> apoptosis
+NK.CD56 OR .CD16
+
+(IFg, IL12) >>> NK
+
+NK >> KILL Low MHC1 Cell
+
+
+
+##
+
+T3H complex like to go to basement membrane of skin kidneys, and joints, and small blood vessels.
+
+##
+
+Immune complex with IgG >> C3b >> (RBC,WBC).CR1 >> reticuloendothelial monocnucelar phagotyfes (Kupffer cell, splenic macrophage)
+OR, the Macs (with CD16) can directly bind to IgGo
+Too much? Serum sickness.
