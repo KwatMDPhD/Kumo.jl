@@ -5,23 +5,6 @@ module Immunology
 #function phagocytosis(eater, food) = "$eater is eating $food."
 #function contract(Muscle) = "Muslce contracts." end
 #function contain(Tissue) = "$Tissue contains its content." end
-
-#function work(Neutrophil) 
-#
-#    go_toward()
-#    phagocytosis()
-#
-#end
-#
-#bind(CD16, FC) = nothing
-#
-#bind(MHC1, Antigen) = MHC1_Antigen
-#bind(MHC1_Antigen, TCellCD8) = activate(TCellCD8)
-#
-#work(SmoothMuscle) = contract(SmoothMuscle)
-#
-#work(Endothelium) = contain(Endothelium)
-#
 #
 #bind(C3b, IgG) = nothing
 #
