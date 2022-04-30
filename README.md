@@ -704,3 +704,56 @@ Gs => b1 adrenergic receptor
 Adenyl cyclase cleaves ATP to form cAMP ==> Protein kinase A
 
 (NeuralCrest cell, melanocyte, Schwann cell, Langerhans cell, Dendritic cell).S100
+
+##
+
+VEGF ==> Angiogenesis
+
+#
+
+Epithelial cells have Cytokeratin, which becomes intermediate filaments, which anchor desmosomes and hemidesmosomes
+
+Muslce cells have desmin
+
+Glia cells have glial fibrillary acidic protein
+
+Neurons have neurofilament
+
+mesenchymal cells have vimentin
+
+endothelial cell hve cd31 (pecam1)
+
+myocytes have myeloperoxidase
+
+neuroendocrine cells ahve chromogranin A and synaptophysin
+
+lymphoid (HSC) cell have cd45
+T has cd3
+B has cd20
+
+neural crest origin cells have S100, SOX10
+melanocytes have HMB45
+
+##
+
+Damage ==> Platelet ==> PDGF + TGFb ===> vasoconstriction, fibrin clot
+
+PDGF + Macrophage ==> IL1, TNFa, TGFb, VEGF ==> vasodilation, permeable, chmotax
+
+TGFb + Fibroblast ===> VEGF + FGFs + Extracellular matrix, epitheliazation, collagen
+
+TNFa ==> Cachexia
+
+TNFa is aka cachectin.
+
+TNFa ==> v appetite, ^ Metabolism, Fever, liver releases CRP and fibrinogen
+
+IL1 ==> ^ Fever
+
+Leukocyte ==> IFa
+
+CD4T makes IL3.
+
+TGFb v T proliferation and T cytokin
+
+Ubiquitin ligase ==> antigen ==> proteasome ==> frag ==> TAP ==> @ER + MHC1 ==> Membrane

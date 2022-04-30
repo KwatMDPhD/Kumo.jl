@@ -34,7 +34,21 @@ end
 
 struct Antigen end
 
-struct MHC1 end
+struct MHC1
+
+    hlaa::HLAA
+    hlac::HLAC
+    hlab::HLAB
+
+end
+
+struct MHC2
+
+    hlaa::HLADR
+    hlac::HLADQ
+    hlab::HLADP
+
+end
 
 struct MHC1_Antigen end
 
@@ -45,8 +59,6 @@ end
 function bind(mhc1_antigen::MHC1_Antigen, cd8::CD8)
     activate(parent(cd8))
 end
-
-struct MHC2 end
 
 struct MHC2_Antigen end
 
@@ -59,3 +71,4 @@ function bind(cd16::CD16, fc::FC)
     # TODO
     phagocytosis(parent(cd16), parent(fc))
 end
+
