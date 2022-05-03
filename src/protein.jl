@@ -6,69 +6,99 @@ struct C3b end
 
 struct IL12 end
 
-function transform(il12::IL12, th0::Th0)
-    Th1()
-end
+struct CD16 end
 
-struct CXCR end
-
-struct Bradykinin end
+abstract type CXCR end
 
 struct CXCR1 <: CXCR end
 
 struct CXCR2 <: CXCR end
 
+struct Bradykinin end
+
 struct FC end
 
 struct IgM
+
     fc::FC
+
+    function IgM()
+
+        new(FC())
+
+    end
+
 end
 
 struct IgE
+
     fc::FC
+
+    function IgE()
+
+        new(FC())
+
+    end
+
 end
 
 struct IgG
+
     fc::FC
+
+    function IgG()
+
+        new(FC())
+
+    end
+
 end
 
-struct Antigen end
+struct IgA end
+
+struct IgD end
+
+struct HLAA end
+struct HLAC end
+struct HLAB end
+struct HLADR end
+struct HLADQ end
+struct HLADP end
 
 struct MHC1
 
     hlaa::HLAA
+
     hlac::HLAC
+
     hlab::HLAB
+
+    function MHC1()
+
+        new(HLAA(), HLAC(), HLAB())
+
+    end
 
 end
 
 struct MHC2
 
-    hlaa::HLADR
-    hlac::HLADQ
-    hlab::HLADP
+    hladr::HLADR
+
+    hladq::HLADQ
+
+    hladp::HLADP
+
+    function MHC2()
+
+        new(HLADR(), HLADQ(), HLADP())
+
+    end
 
 end
 
-struct MHC1_Antigen end
+struct Antigen end
 
-function bind(mhc1::MHC1, antigen::Antigen)
-    MHC1_Antigen()
-end
+struct MHC1Antigen end
 
-function bind(mhc1_antigen::MHC1_Antigen, cd8::CD8)
-    activate(parent(cd8))
-end
-
-struct MHC2_Antigen end
-
-function bind(mhc1::MHC2, antigen::Antigen)
-    MHC2_Antigen()
-end
-
-struct CD16 end
-function bind(cd16::CD16, fc::FC)
-    # TODO
-    phagocytosis(parent(cd16), parent(fc))
-end
-
+struct MHC2Antigen end

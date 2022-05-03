@@ -2,7 +2,6 @@
 
 Let's see how far this goes
 
-WORK IN PROGRESS
 
 E v Parasite
 
@@ -671,7 +670,9 @@ Glucose v (IL10, Fibroblast migration)
 
 Glucose ^ (inflammatory cytokine)
 
-(Endothelial cell, Macrophage, Platelet) ^ Bradykinin
+(Endothelial cell, Macrophage, Platelet) ^ Bradykinin ===> endothelial smooth muscle dilation
+
+soft..((Endothelium, platelet, immune cells) ^ Platelet-activating factor ==> Phagocytosis, degranulation, endothelum atttachment)
 
 ##
 
@@ -738,11 +739,13 @@ melanocytes have HMB45
 
 Damage ==> Platelet ==> PDGF + TGFb ===> vasoconstriction, fibrin clot
 
+PDFG ==> angiogenesis, fibroblast proli, smooth muscle proli
+
 PDGF + Macrophage ==> IL1, TNFa, TGFb, VEGF ==> vasodilation, permeable, chmotax
 
 TGFb + Fibroblast ===> VEGF + FGFs + Extracellular matrix, epitheliazation, collagen
 
-TNFa ==> Cachexia
+(TNFa, IL6) ==> Cachexia
 
 TNFa is aka cachectin.
 
@@ -757,3 +760,69 @@ CD4T makes IL3.
 TGFb v T proliferation and T cytokin
 
 Ubiquitin ligase ==> antigen ==> proteasome ==> frag ==> TAP ==> @ER + MHC1 ==> Membrane
+
+FAS = CD95
+
+FAS is like TNFR1. Family.
+
+Lymphocytes have CD44, which localize them to lymphnodes.
+
+##
+
+IL6 ==> Liver ==> Acute phase reactants (fibrinogen, globulins) ==> ^ ESR
+
+##
+
+(IL1, IFg) --0-> ^ VEGF
+(VEGF, fibroblast growth factor 2) -=-> angiogenesis, lymphogiogenesis
+
+EGF => mitogen for epithelial cells
+GH + Hepatocyte ==> IGF1 (somatomedin C) ==> Cell growth
+
+FGFs ==> recruite ==> macrophage, fibroblasts, endothelial cells
+
+(TNFR, TLR, Growth factors, Mitogens) ==> ^ IkB ubiquitination ==> v IkB ==> ^ NFkB ==> (Immunity, Inflammation, Cell proliferation, IkB)
+
+GCSF ==> neutrophil exit marrow
+
+##
+
+Proopiomelanocortin ==> (Beta-endorphin, ACTH, MSH)
+
+Opioid = {Enkephalin, Endorphin, Dynorphin} ==> Pain
+
+Morphin, hydromorphone => Opioid receptor mu
+
+##
+
+GH ==> ^Somatomedin C (~ Insulin)
+
+##
+
+Kallikrein >> make from kininogen Bradykinin
+
+Bradykinin, C3a, C5a ==> vasodilation
+
+ACE ==> Bradykinin inactivation
+
+C1 inhibitor >> v Kallikrein
+
+Macrophage >> 1,25-dihydroxyvitamin D
+
+## 
+
+Glucocorticoid ==> (^IL10, v Neutrophil apoptosis, v Eosinophil, monocyte, lymphcyte, v marophogage avtication, v phospholipase a2)
+##
+
+Epinephrine ==> v Mast cell release
+
+(Vancomycin, Opioid) ==> IgE-independent Mast cell activation (not but just like type-1 hypersensitivity)
+
+##
+
+Histamine ==> Vasodilation, ^ Vascular permeability, ^ Catecholamine, Bronchoconstriction
+
+Histamine ========> H1 and H2, vasodilation (hypoten) and increased catecholamine secretion (tachy)
+Histamine ========> H1, bronchial smooth muscle contraction and ^ vascular permeability
+Histamine ========> H2, ^ gastric acid secretion (nausa)
+Histamine => ^ peripheral nocireceptor

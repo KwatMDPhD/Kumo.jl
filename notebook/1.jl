@@ -4,7 +4,7 @@
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ c4fb9be2-5d12-4a5c-8c9d-2460079cf28c
+# ╔═╡ 5ab69769-787d-4fa5-a788-6d56a9196c32
 begin
 
     using Pkg
@@ -15,21 +15,13 @@ begin
 
 end
 
-# ╔═╡ c5fb9be2-5d12-4a5c-8c9d-2460079cf32c
-using Immunology
+# ╔═╡ 2b7439fc-9c63-44b4-b23d-34861ba12f35
+Revise.retry()
 
-# ╔═╡ c6fb9be2-5d12-4a5c-8c9d-2460079cf32c
-1
-
-# ╔═╡ b6fb9be2-5d12-4a5c-8c9d-2460079cf32c
-
-
-# ╔═╡ d6fb9be2-5d12-4a5c-8c9d-2460079cf32c
-
+# ╔═╡ ab7439fc-9c63-44b4-b23d-34861ba12f35
+Number()
 
 # ╔═╡ Cell order:
-# ╠═c4fb9be2-5d12-4a5c-8c9d-2460079cf28c
-# ╠═c5fb9be2-5d12-4a5c-8c9d-2460079cf32c
-# ╠═c6fb9be2-5d12-4a5c-8c9d-2460079cf32c
-# ╠═b6fb9be2-5d12-4a5c-8c9d-2460079cf32c
-# ╠═d6fb9be2-5d12-4a5c-8c9d-2460079cf32c
+# ╠═5ab69769-787d-4fa5-a788-6d56a9196c32
+# ╠═2b7439fc-9c63-44b4-b23d-34861ba12f35
+# ╠═ab7439fc-9c63-44b4-b23d-34861ba12f35

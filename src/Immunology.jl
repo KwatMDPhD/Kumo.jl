@@ -1,5 +1,27 @@
 module Immunology
 
+function generate(any::Any)
+
+    # TODO: Initialize in the global space
+
+    println("Generated $any.")
+
+end
+
+function owner(any::Any)
+
+    # TODO
+
+end
+
+include("protein.jl")
+
+include("cell.jl")
+
+include("medication.jl")
+
+include("react.jl")
+
 #function pain() = "The body feels pain." end
 #function apoptosis(Cell) = "$Cell undergoes apoptosis." end
 #function phagocytosis(eater, food) = "$eater is eating $food."
