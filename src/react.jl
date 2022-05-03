@@ -16,6 +16,18 @@ function react(cd16::CD16, fc::FC)
 
 end
 
+function react(Neutrophil, FC)
+    println("...")
+end
+
+function react(Macrophage, FC)
+    println("YUMMM...")
+end
+
+function react(NaturalKillerCell, FC)
+    println("Granzymes...")
+end
+
 function react(mhc1::MHC1, antigen::Antigen)
 
     generate(MHC1Antigen())

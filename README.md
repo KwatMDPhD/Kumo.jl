@@ -3,8 +3,6 @@
 Let's see how far this goes
 
 
-E v Parasite
-
 (Th1 & Th17) v Candida albicans mucocutaneous infection
 
 N v Candida albicans invasion
@@ -260,6 +258,10 @@ Platelet ^ Thromboxane A2 >> (Vasoconstriction & Platelet aggregation)
 Prostacyclin >> Opposite of Thromboxane A2
 
 (Prostaglandin D2 & Prostaglandin E2) >> (Vasodilation & ^ Vascular permeability)
+
+COX1 => Constituttive Prostaglandin ==> (Gastric mucosal acid neutralization, renal perfusion, platelet aggregation)
+
+CoX2 => Inducible prostaglandin ==> (Renal perfusion, vasodilation, tissue repair , pain!, inflammation)
 
 ## Asthma
 
@@ -826,3 +828,22 @@ Histamine ========> H1 and H2, vasodilation (hypoten) and increased catecholamin
 Histamine ========> H1, bronchial smooth muscle contraction and ^ vascular permeability
 Histamine ========> H2, ^ gastric acid secretion (nausa)
 Histamine => ^ peripheral nocireceptor
+
+##
+
+Corticosteroid >> v TF >> v phospholipase a2 >> v Inflammatory prostaglandin 
+" => v IL4, v IL3
+" => ^ antiinflammatories
+
+" ==> Dendritic cell apoptosis
+
+==> Epithelial proliferation, v type 1 colla
+" ==> vIL4 but ^^^CD40L on t cells ==> IgE
+
+##
+
+
+## 
+
+Blood brain barrier endothelial cells has P-glycoprotein which guard the brain
+
