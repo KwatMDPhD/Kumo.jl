@@ -14,28 +14,39 @@ end
 
 include("include_in_order.jl")
 
-include_in_order(joinpath(@__DIR__, "protein"), [])
+include_in_order(
+    joinpath(@__DIR__, "protein"),
+    [
+        "cluster_of_differentiation",
+        "complement_component",
+        "interleukin",
+        "ig",
+        "multihistocompatibility_complex",
+        "_",
+    ],
+)
 
-#include_in_order(
-#    joinpath(@__DIR__, "cell"),
-#    [
-#        "Cell",
-#        "Neutrophil",
-#        "NeutrophilActivated",
-#        "Macrophage",
-#        "MacrophageActivated",
-#        "TCell",
-#        "CD4T",
-#        "Th0",
-#        "Th1",
-#        "Th2",
-#        "CD8T",
-#        "CD8TActivated",
-#        "BCell",
-#    ],
-#)
-#
-#include("medication.jl")
+include_in_order(
+    joinpath(@__DIR__, "cell"),
+    [
+        "Cell",
+        "Neutrophil",
+        "NeutrophilActivated",
+        "Macrophage",
+        "MacrophageActivated",
+        "NaturalKillerCell",
+        "TCell",
+        "CD4T",
+        "Th0",
+        "Th1",
+        "Th2",
+        "CD8T",
+        "CD8TActivated",
+        "BCell",
+    ],
+)
+
+include_in_order(joinpath(@__DIR__, "medication"), ["_"])
 
 #function pain() = "The body feels pain." end
 #function apoptosis(Cell) = "$Cell undergoes apoptosis." end
