@@ -48,6 +48,8 @@ include_in_order(
 
 include_in_order(joinpath(@__DIR__, "medication"), ["_"])
 
+include("react.jl")
+
 #function pain() = "The body feels pain." end
 #function apoptosis(Cell) = "$Cell undergoes apoptosis." end
 #function phagocytosis(eater, food) = "$eater is eating $food."

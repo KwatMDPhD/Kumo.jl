@@ -1,4 +1,4 @@
-function react(any1::Any, any2::Any)
+function react(any1, any2)
 
     println("$any1 * $any2")
 
