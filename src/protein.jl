@@ -6,6 +6,12 @@ struct C3b end
 
 struct IL12 end
 
+struct CD3 end
+
+struct CD4 end
+
+struct CD8 end
+
 struct CD16 end
 
 abstract type CXCR end
@@ -59,11 +65,10 @@ struct IgA end
 struct IgD end
 
 struct HLAA end
+
 struct HLAC end
+
 struct HLAB end
-struct HLADR end
-struct HLADQ end
-struct HLADP end
 
 struct MHC1
 
@@ -80,6 +85,12 @@ struct MHC1
     end
 
 end
+
+struct HLADR end
+
+struct HLADQ end
+
+struct HLADP end
 
 struct MHC2
 

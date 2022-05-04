@@ -2,7 +2,6 @@
 
 Let's see how far this goes
 
-
 (Th1 & Th17) v Candida albicans mucocutaneous infection
 
 N v Candida albicans invasion
@@ -811,9 +810,10 @@ C1 inhibitor >> v Kallikrein
 
 Macrophage >> 1,25-dihydroxyvitamin D
 
-## 
+##
 
 Glucocorticoid ==> (^IL10, v Neutrophil apoptosis, v Eosinophil, monocyte, lymphcyte, v marophogage avtication, v phospholipase a2)
+
 ##
 
 Epinephrine ==> v Mast cell release
@@ -831,7 +831,7 @@ Histamine => ^ peripheral nocireceptor
 
 ##
 
-Corticosteroid >> v TF >> v phospholipase a2 >> v Inflammatory prostaglandin 
+Corticosteroid >> v TF >> v phospholipase a2 >> v Inflammatory prostaglandin
 " => v IL4, v IL3
 " => ^ antiinflammatories
 
@@ -842,8 +842,6 @@ Corticosteroid >> v TF >> v phospholipase a2 >> v Inflammatory prostaglandin
 
 ##
 
-
-## 
+##
 
 Blood brain barrier endothelial cells has P-glycoprotein which guard the brain
-

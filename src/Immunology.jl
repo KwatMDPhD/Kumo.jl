@@ -1,26 +1,41 @@
 module Immunology
 
-function generate(any::Any)
-
-    # TODO: Initialize in the global space
-
-    println("Generated $any.")
-
-end
-
-function owner(any::Any)
+function generate(any)
 
     # TODO
 
 end
 
+function owner(any)
+
+    # TODO
+
+end
+
+include("include_in_order.jl")
+
 include("protein.jl")
 
-include("cell.jl")
+include_in_order(
+    joinpath(@__DIR__, "cell"),
+    [
+        "Cell",
+        "Neutrophil",
+        "NeutrophilActivated",
+        "Macrophage",
+        "MacrophageActivated",
+        "TCell",
+        "CD4T",
+        "Th0",
+        "Th1",
+        "Th2",
+        "CD8T",
+        "CD8TActivated",
+        "BCell",
+    ],
+)
 
 include("medication.jl")
-
-include("react.jl")
 
 #function pain() = "The body feels pain." end
 #function apoptosis(Cell) = "$Cell undergoes apoptosis." end
