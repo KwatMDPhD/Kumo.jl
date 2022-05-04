@@ -4,5 +4,4 @@ authors = ["KwatMDPhD <kwat.me@icloud.com>"]
 version = "0.1.0"
 
 [deps]
-Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
 Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"

@@ -2,13 +2,13 @@ function include_in_order(di, jl_)
 
     jl_pa = Dict()
 
-    for (ro, _, jl_) in walkdir(di)
+    for (ro, _, fi_) in walkdir(di)
 
-        for jl in jl_
+        for fi in fi_
 
-            if endswith(jl, ".jl")
+            if endswith(fi, ".jl")
 
-                jl_pa[splitext(jl)[1]] = joinpath(ro, jl)
+                jl_pa[splitext(fi)[1]] = joinpath(ro, fi)
 
             end
 
