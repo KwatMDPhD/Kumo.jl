@@ -1,12 +1,10 @@
 struct MacrophageActivated
 
-    macrophage::Macrophage
-
-    function ActivatedMacrophage(macrophage)
+    function ActivatedMacrophage()
 
         generate(IL8())
 
-        new(macrophage)
+        new()
 
     end
 

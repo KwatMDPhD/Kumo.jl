@@ -1,10 +1,10 @@
+# TODO: Is Th0 the same as CD4T?
+
 struct Th0
 
-    tcell::TCell
+    function Th0()
 
-    function Th0(tcell)
-
-        new(tcell)
+        new()
 
     end
 

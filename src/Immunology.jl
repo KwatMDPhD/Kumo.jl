@@ -4,11 +4,15 @@ function generate(any)
 
     # TODO
 
+    any
+
 end
 
 function owner(any)
 
     # TODO
+
+    "Owner of $any"
 
 end
 

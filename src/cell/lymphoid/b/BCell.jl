@@ -1,10 +1,8 @@
 struct BCell
 
-    cell::Cell
-
     function BCell()
 
-        new(Cell())
+        new()
 
     end
 

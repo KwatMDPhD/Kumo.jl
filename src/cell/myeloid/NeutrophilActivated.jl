@@ -1,14 +1,12 @@
 struct NeutrophilActivated
 
-    neutrophil::Neutrophil
-
     antigen::Antigen
 
-    function NeutrophilActivated(neutrophil, antigen)
+    function NeutrophilActivated(antigen)
 
         print("Phagocytosed $antigen.")
 
-        new(neutrophil, antigen)
+        new(antigen)
 
     end
 

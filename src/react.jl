@@ -1,6 +1,6 @@
 function react(any1, any2)
 
-    println("$any1 * $any2")
+    println("$any1    *    $any2")
 
 end
 
@@ -16,16 +16,22 @@ function react(cd16::CD16, fc::FC)
 
 end
 
-function react(Neutrophil, FC)
-    println("...")
+function react(neutrophil::Neutrophil, fc::FC)
+
+    println("$neutrophil phagocytosing.")
+
 end
 
-function react(Macrophage, FC)
-    println("YUMMM...")
+function react(macrophage::Macrophage, fc::FC)
+
+    println("$macrophage phagocytosing.")
+
 end
 
-function react(NaturalKillerCell, FC)
-    println("Granzymes...")
+function react(naturalkillercell::NaturalKillerCell, fc::FC)
+
+    println("$naturalkillercell phagocytosing.")
+
 end
 
 function react(mhc1::MHC1, antigen::Antigen)
@@ -34,8 +40,14 @@ function react(mhc1::MHC1, antigen::Antigen)
 
 end
 
-function react(cd8t::CD8T, mhc1antigen::MHC1Antigen)
+function react(cd8::CD8, mhc1antigen::MHC1Antigen)
 
-    generate(ActivatedCD8T(parent(mhc1antigen)))
+    react(owner(cd8), owner(mhc1antigen))
+
+end
+
+function react(cd8t::CD8T, cell::Cell)
+
+    println("Inducing apoptosis of $cell.")
 
 end

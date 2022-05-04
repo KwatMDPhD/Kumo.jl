@@ -1,12 +1,10 @@
 struct CD8T
 
-    tcell::TCell
-
     cd8::CD8
 
-    function CD8T(tcell)
+    function CD8T()
 
-        new(tcell, CD8())
+        new(CD8())
 
     end
 
