@@ -1,5 +1,7 @@
 function include_in_order(di, jl_)
 
+    jl_pa = Dict()
+
     for (ro, _, jl_) in walkdir(di)
 
         for jl in jl_
@@ -20,7 +22,7 @@ function include_in_order(di, jl_)
 
     end
 
-    for (jl, pa) in values(jl_pa)
+    for (jl, pa) in jl_pa
 
         println("Forgot $jl.")
 
