@@ -782,41 +782,70 @@ Corticosteroid >> v TF >> v phospholipase a2 >> v Inflammatory prostaglandin
 " ==> vIL4 but ^^^CD40L on t cells ==> IgE
 
 ##
+
 #function pain() = "The body feels pain." end
 #function apoptosis(Cell) = "$Cell undergoes apoptosis." end
 #function phagocytosis(eater, food) = "$eater is eating $food."
 #function contract(Muscle) = "Muslce contracts." end
 #function contain(Tissue) = "$Tissue contains its content." end
+
 #
+
 #bind(C3b, IgG) = nothing
+
 #
+
 #result(Tylenol) = inhibit(Pain)
+
 #
+
 #bind(Bradykinin, BloodVessel) = decrease(BloodVessel.SmoothMuscle), decrease(BloodVessel.Endothelium)
 #bind(Bradykinin, NonvascularSmoothMuscle) = increase(NonvascularSmoothMuscle)
 #result(Bradykinin) = activate(Pain)
+
 #
+
 #
+
 #function bind(IL8, CXCR) = activate(parent(CXCR)) end
+
 #
+
 #function endocytosis(Macrophage, Antigen) = activate(Macrophage) end
 #struct SmoothMuscle end
+
 #
+
 #function work(smoothmuscle::SmoothMuscle)
-#    # TODO
-#    contract(smoothmuscle)
+
+# # TODO
+
+# contract(smoothmuscle)
+
 #end
+
 #
+
 #struct Endothelium end
+
 #
+
 #function work(endothelium::Endothelium)
-#    # TODO
-#    contain(endothelium)
+
+# # TODO
+
+# contain(endothelium)
+
 #end
+
 #
+
 #struct BloodVessel
-#    smoothmuscle::SmoothMuscle
-#    endothelium::Endothelium
+
+# smoothmuscle::SmoothMuscle
+
+# endothelium::Endothelium
+
 #end
 
 ##

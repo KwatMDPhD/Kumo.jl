@@ -1,21 +1,11 @@
 module Immunology
 
-include("include_in_order.jl")
+include("protein.jl")
 
-include_in_order(
-    joinpath(@__DIR__, "protein"),
-    [
-    ],
-)
+include("cell.jl")
 
-include_in_order(
-    joinpath(@__DIR__, "cell"),
-    [],
-)
+include("medication.jl")
 
-include_in_order(joinpath(@__DIR__, "medication"), ["_"])
-
-include("react.jl")
-
+include("function.jl")
 
 end
