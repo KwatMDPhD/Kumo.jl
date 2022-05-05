@@ -5,18 +5,15 @@ struct CD4 end
 
 struct CD8 end
 
+struct Mac1 end
+
+struct LFA1 end
 
 struct CD18
 
     mac1::Mac1
 
     lfa1::LFA1
-
-    function CD18()
-
-        new(Mac1(), LFA1())
-
-    end
 
 end
 
@@ -43,12 +40,6 @@ struct MHC1
 
     Beta2Microglobulin::Beta2Microglobulin
 
-    function MHC1()
-
-        new(HLAA(), HLAC(), HLAB(), HeavyChain(), Beta2Microglobulin())
-
-    end
-
 end
 
 # ================================================================================================
@@ -66,16 +57,22 @@ struct MHC2
 
     hladp::HLADP
 
-    function MHC2()
-
-        new(HLADR(), HLADQ(), HLADP())
-
-    end
-
 end
 
 # ================================================================================================
 struct Antigen end
+
+struct EndosomeAntigen
+
+    antigen::Antigen
+
+end
+
+struct CytoplasmicAntigen
+
+    antigen::Antigen
+
+end
 
 struct MHC1Antigen end
 
@@ -93,35 +90,17 @@ struct IgM
 
     fc::FC
 
-    function IgM()
-
-        new(FC())
-
-    end
-
 end
 
 struct IgE
 
     fc::FC
 
-    function IgE()
-
-        new(FC())
-
-    end
-
 end
 
 struct IgG
 
     fc::FC
-
-    function IgG()
-
-        new(FC())
-
-    end
 
 end
 

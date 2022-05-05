@@ -1,9 +1,14 @@
 # ================================================================================================
+act(::Macrophage) = IL8()
+
+# ================================================================================================
 react(::Th0, ::IL12) = Th1()
 
 react(::CD16, ::FC) = nothing
 
-react(::MHC1, ::Antigen) = MHC1Antigen()
+react(::MHC1, ::CytoplasmicAntigen) = MHC1Antigen()
+
+react(::MHC2, ::EndosomeAntigen) = MHC1Antigen()
 
 react(::CD8, ::MHC1Antigen) = nothing
 

@@ -89,6 +89,10 @@ struct EndothelialCell
 
 end
 
+struct TumorCell
+
+end
+
 # ================================================================================================
 Phagocyte = Union{Neutrophil, Macrophage, NaturalKiller}
 
