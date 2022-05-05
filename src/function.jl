@@ -1,25 +1,27 @@
 # ================================================================================================
-act(::Macrophage) = IL8()
+act(::Macrophage)::IL8
 
-act(::Union{Th1, Th2, CD8T}) = IL3()
+act(::Union{Th1, Th2, CD8T})::IL3
+
+function react(::CD8T, ::CD8Signal)::ApoptosisSignal
+
+end
 
 # ================================================================================================
 react(::Th0, ::IL12) = Th1()
 
 react(::Union{Neutrophil, Macrophage, NaturalKiller}, ::Any) = EndosomeAntigen()
 
-function react(::CD8T, ::Cell)
-
-    # TODO: Delete
-
-end
 
 react(::Neutrophil, ::PECAM1) = "Transmigration"
 
 react(::NaturalKiller, ::FC) = Granzyme()
-"Tight adhesion and crawling"
 
-react(::TumorCell, ::Granzyme) = "Lysis"
+function react(::TumorCell, ::Granzyme)
+
+    # TODO: Delete
+
+end
 
 react(::Cell, ::Virus) = CytoplasmAntigen()
 
@@ -31,13 +33,23 @@ react(::MHC1, ::CytoplasmAntigen) = MHC1Antigen()
 
 react(::MHC2, ::EndosomeAntigen) = MHC2Antigen()
 
-react(::CD8, ::MHC1Antigen) = nothing
+react(::CD8, ::MHC1Antigen) = CD8Signal()
 
-react(::CD4, ::MHC2Antigen) = nothing
+react(::CD4, ::MHC2Antigen) = CD4Signal()
 
-react(::CD28, ::CD80CD86) = nothing
+react(::CD28, ::CD80CD86) = CD28Signal()
 
-react(::CD16, ::FC) = nothing
+function react(::CD8Signal, ::CD28Signal)::ActivatedCD8T
+end
+
+function react(::CD4Signal, ::CD28Signal)::ThSignal
+end
+
+function react(::ThSignal, ::IL2)::balhablahSignal
+
+function react(::NaiveT, ::balhablahSignal)::Th1
+
+react(::CD16, ::FC) = CD16Signal()
 
 react(::C3, ::FC) = C3a(), C3b()
 

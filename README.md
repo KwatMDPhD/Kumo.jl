@@ -1,3 +1,26 @@
+Cytoplasm >> (Virus & Tumor) @ MHC1 >> $ @ CD8 >> Apoptosis
+
+APC.MHC2
+MHC2.AlphaChain
+MHC2.BetaChain
+MHC2 @ CD4 Th
+Lysosome >> Bacterium @ MHC2 >> CD4 T = (Th1 | Th2)
+
+Effector T ^ IL3 >> $ @ HSC >> $ ^
+
+MHC1 @ M
+MHC2 @ M
+
+CD4 @ Naive T
+
+CD8 @ Cytotoxic T
+
+MHC2 @ CD4 >> $ = Effector T
+
+CD28 @ Effector T
+
+CD80CD86 @ M
+
 (MHC1 @ CD8) & (CD80CD86 @ CD28) >> Cytotoxic T ^
 
 CTLA4 @ CD80CD86 >> Cytotoxic T v
