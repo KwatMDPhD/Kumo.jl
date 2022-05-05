@@ -1,62 +1,3 @@
-# Immunology.jl
-
-Let's see how far this goes
-
-(Th1 & Th17) v Candida albicans mucocutaneous infection
-
-N v Candida albicans invasion
-
-## Chemotaxis
-
-IL8 > Chemotaxis
-
-N.LSelectin (CD62L)
-EndothelialCell.ESelectin
-EndothelialCell.PSelectin
-EndothelialCell.PECAM1
-
-CD18.Mac1
-CD18.LFA1
-
-Ne.CD18
-En.ICAM1
-Blood vessel ^ Permeability >> N ^ Margination >> (LSelectin & ESelectin & PSelectin) >> N ^ Rolling >> N ^ Activation >> (Mac1 & LFA1) @ ICAM1 >> Ne ^ Tight adhesion >> Ne ^ Crawling >> Ne @ PECAM1 >> Ne ^ Transmigration
-Leukocyte extravasation
-
-## M
-
-M.FCR
-
-IgM.FC
-IgG.FC
-
-Co @ FC
-
-##
-
-Neutrophil.CD16
-Macrophage.CD16
-NKC.CD16
-
-FC @ CD16 >> NK ^ Granzymes
-
-NK @ Tumor cell
-
-## B
-
-MemoryBCell ^ Anamnestic response >> T1H
-
-TumorBcell ^ Antigen display
-
-## T
-
-CD8TCell ^ (IFg & TNFa & Perforin & Granzymes)
-
-MHC1 @ CD8TCell
-
-NucleatedCell.MHC1
-MHC1.HeavyChain
-MHC1.Beta2Microglobulin
 Cytoplasm >> (Virus & Tumor) @ MHC1 >> $ @ CD8 >> Apoptosis
 
 APC.MHC2
@@ -841,7 +782,49 @@ Corticosteroid >> v TF >> v phospholipase a2 >> v Inflammatory prostaglandin
 " ==> vIL4 but ^^^CD40L on t cells ==> IgE
 
 ##
+#function pain() = "The body feels pain." end
+#function apoptosis(Cell) = "$Cell undergoes apoptosis." end
+#function phagocytosis(eater, food) = "$eater is eating $food."
+#function contract(Muscle) = "Muslce contracts." end
+#function contain(Tissue) = "$Tissue contains its content." end
+#
+#bind(C3b, IgG) = nothing
+#
+#result(Tylenol) = inhibit(Pain)
+#
+#bind(Bradykinin, BloodVessel) = decrease(BloodVessel.SmoothMuscle), decrease(BloodVessel.Endothelium)
+#bind(Bradykinin, NonvascularSmoothMuscle) = increase(NonvascularSmoothMuscle)
+#result(Bradykinin) = activate(Pain)
+#
+#
+#function bind(IL8, CXCR) = activate(parent(CXCR)) end
+#
+#function endocytosis(Macrophage, Antigen) = activate(Macrophage) end
+#struct SmoothMuscle end
+#
+#function work(smoothmuscle::SmoothMuscle)
+#    # TODO
+#    contract(smoothmuscle)
+#end
+#
+#struct Endothelium end
+#
+#function work(endothelium::Endothelium)
+#    # TODO
+#    contain(endothelium)
+#end
+#
+#struct BloodVessel
+#    smoothmuscle::SmoothMuscle
+#    endothelium::Endothelium
+#end
 
 ##
 
 Blood brain barrier endothelial cells has P-glycoprotein which guard the brain
+(Th1 & Th17) v Candida albicans mucocutaneous infection
+N v Candida albicans invasion
+IL8 > Chemotaxis
+jlood vessel ^ Permeability >> N ^ Margination >> (LSelectin & ESelectin & PSelectin) >> N ^ Rolling >> N ^ Activation >> (Mac1 & LFA1) @ ICAM1 >> Ne ^ Tight adhesion >> Ne ^ Crawling >> Ne @ PECAM1 >> Ne ^ Transmigration
+MemoryBCell ^ Anamnestic response >> T1H
+CD8TCell ^ (IFg & TNFa & Perforin & Granzymes)

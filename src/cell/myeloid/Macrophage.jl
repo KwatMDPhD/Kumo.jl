@@ -1,10 +1,10 @@
 struct Macrophage
 
-    cd16::CD16
+    fcr::FCR
 
     function Macrophage()
 
-        new(CD16())
+        new(FCR())
 
     end
 

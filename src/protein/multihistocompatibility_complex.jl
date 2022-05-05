@@ -4,6 +4,10 @@ struct HLAC end
 
 struct HLAB end
 
+struct HeavyChain end
+
+struct Beta2Microglobulin end
+
 struct MHC1
 
     hlaa::HLAA
@@ -12,9 +16,13 @@ struct MHC1
 
     hlab::HLAB
 
+    heavychain::HeavyChain
+
+    Beta2Microglobulin::Beta2Microglobulin
+
     function MHC1()
 
-        new(HLAA(), HLAC(), HLAB())
+        new(HLAA(), HLAC(), HLAB(), HeavyChain(), Beta2Microglobulin())
 
     end
 

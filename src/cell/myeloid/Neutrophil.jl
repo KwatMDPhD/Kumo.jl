@@ -1,14 +1,18 @@
 struct Neutrophil
 
-    cd16::CD16
+    fcr::FCR
+
+    cd18::CD18
 
     cxcr1::CXCR1
 
     cxcr2::CXCR2
 
+    lselectin::LSelectin
+
     function Neutrophil()
 
-        new(CD16(), CXCR1(), CXCR2())
+        new(FCR(), CD18(), CXCR1(), CXCR2())
 
     end
 
