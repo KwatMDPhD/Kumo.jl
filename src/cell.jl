@@ -25,6 +25,12 @@ struct Macrophage
 
     fcr::FCR
 
+    cd80cd86::CD80CD86
+
+    mhc1::MHC2
+
+    mhc2::MHC2
+
 end
 
 # ================================================================================================
@@ -41,29 +47,41 @@ struct TCell
 
 end
 
-struct CD4T
+struct NaiveT
 
     cd4::CD4
 
 end
 
-struct Th0
-
-    # TODO: Is Th0 the same as CD4T?
-
-end
+Th0 = NaiveT
 
 struct Th1
+
+    cd4::CD4
+
+    cd28::CD28
 
 end
 
 struct Th2
+
+    cd4::CD4
+
+    cd28::CD28
 
 end
 
 struct CD8T
 
     cd8::CD8
+
+    cd28::CD28
+
+end
+
+struct Treg
+
+    cd28::CD28
 
 end
 
@@ -91,9 +109,13 @@ end
 
 struct TumorCell
 
+    cytoplasmantigen::CytoplasmAntigen
+
 end
 
 # ================================================================================================
-Phagocyte = Union{Neutrophil, Macrophage, NaturalKiller}
+struct Virus end
+
+struct Bacterium end
 
 # ================================================================================================

@@ -1,31 +1,46 @@
 # ================================================================================================
 act(::Macrophage) = IL8()
 
+act(::Union{Th1, Th2, CD8T}) = IL3()
+
 # ================================================================================================
 react(::Th0, ::IL12) = Th1()
 
-react(::CD16, ::FC) = nothing
+react(::Union{Neutrophil, Macrophage, NaturalKiller}, ::Any) = EndosomeAntigen()
 
-react(::MHC1, ::CytoplasmicAntigen) = MHC1Antigen()
+function react(::CD8T, ::Cell)
 
-react(::MHC2, ::EndosomeAntigen) = MHC1Antigen()
+    # TODO: Delete
 
-react(::CD8, ::MHC1Antigen) = nothing
-
-react(::Phagocyte, ::Any) = "Phagocytosis"
-
-react(::CD8T, ::Cell) = "Inducing apoptosis"
-
-react(::CD18, ::ICAM1) = "Tight adhesion and crawling"
+end
 
 react(::Neutrophil, ::PECAM1) = "Transmigration"
 
-react(::C3, ::FC) = C3a(), C3b()
+react(::NaturalKiller, ::FC) = Granzyme()
+"Tight adhesion and crawling"
 
+react(::TumorCell, ::Granzyme) = "Lysis"
+
+react(::Cell, ::Virus) = CytoplasmAntigen()
+
+# ================================================================================================
 react(::NaturalKiller, ::TumorCell) = nothing
 
-react(::NaturalKiller, ::FC) = Granzyme()
+# ================================================================================================
+react(::MHC1, ::CytoplasmAntigen) = MHC1Antigen()
 
-react(::Granzyme, ::TumorCell) = "Lysis"
+react(::MHC2, ::EndosomeAntigen) = MHC2Antigen()
+
+react(::CD8, ::MHC1Antigen) = nothing
+
+react(::CD4, ::MHC2Antigen) = nothing
+
+react(::CD28, ::CD80CD86) = nothing
+
+react(::CD16, ::FC) = nothing
+
+react(::C3, ::FC) = C3a(), C3b()
+
+react(::CD18, ::ICAM1) = nothing
 
 # ================================================================================================

@@ -17,6 +17,20 @@ struct CD18
 
 end
 
+struct CD28 end
+
+struct CD80 end
+
+struct CD86 end
+
+struct CD80CD86
+
+    cd80::CD80
+
+    cd86::CD86
+
+end
+
 # ================================================================================================
 struct HLAA end
 
@@ -49,6 +63,10 @@ struct HLADQ end
 
 struct HLADP end
 
+struct AlphaChain end
+
+struct BetaChain end
+
 struct MHC2
 
     hladr::HLADR
@@ -57,22 +75,16 @@ struct MHC2
 
     hladp::HLADP
 
+    alphachain::AlphaChain
+
+    betachain::BetaChain
+
 end
 
 # ================================================================================================
-struct Antigen end
+struct EndosomeAntigen end
 
-struct EndosomeAntigen
-
-    antigen::Antigen
-
-end
-
-struct CytoplasmicAntigen
-
-    antigen::Antigen
-
-end
+struct CytoplasmAntigen end
 
 struct MHC1Antigen end
 
@@ -109,11 +121,9 @@ struct IgA end
 struct IgD end
 
 # ================================================================================================
-abstract type CXCR end
+struct CXCR1 end
 
-struct CXCR1 <: CXCR end
-
-struct CXCR2 <: CXCR end
+struct CXCR2 end
 
 struct LSelectin end
 
