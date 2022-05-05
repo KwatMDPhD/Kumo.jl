@@ -1,53 +1,11 @@
-function react(any1, any2)
+react(::Th0, ::IL12) = Th1()
 
-    println("$any1    *    $any2")
+react(::CD16, ::FC) = nothing
 
-end
+react(::MHC1, ::Antigen) = MHC1Antigen()
 
-function react(th0::Th0, il12::IL12)
+react(::CD8, ::MHC1Antigen) = nothing
 
-    generate(Th1())
+react(::Phagocyte, ::Any) = "Phagocytosis"
 
-end
-
-function react(cd16::CD16, fc::FC)
-
-    react(owner(cd16), fc)
-
-end
-
-function react(neutrophil::Neutrophil, fc::FC)
-
-    println("$neutrophil phagocytosing.")
-
-end
-
-function react(macrophage::Macrophage, fc::FC)
-
-    println("$macrophage phagocytosing.")
-
-end
-
-function react(naturalkillercell::NaturalKillerCell, fc::FC)
-
-    println("$naturalkillercell phagocytosing.")
-
-end
-
-function react(mhc1::MHC1, antigen::Antigen)
-
-    generate(MHC1Antigen())
-
-end
-
-function react(cd8::CD8, mhc1antigen::MHC1Antigen)
-
-    react(owner(cd8), owner(mhc1antigen))
-
-end
-
-function react(cd8t::CD8T, cell::Cell)
-
-    println("Inducing apoptosis of $cell.")
-
-end
+react(::CD8T, ::Cell) = "Inducing apoptosis"

@@ -1,21 +1,5 @@
 module Immunology
 
-function generate(any)
-
-    # TODO
-
-    any
-
-end
-
-function owner(any)
-
-    # TODO
-
-    "Owner of $any"
-
-end
-
 include("include_in_order.jl")
 
 include_in_order(
@@ -47,6 +31,7 @@ include_in_order(
         "CD8T",
         "CD8TActivated",
         "BCell",
+        "Phagocyte",
     ],
 )
 
