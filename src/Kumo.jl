@@ -1,5 +1,6 @@
 module Kumo
 
+# TODO: Use >>; `A >> B >> C` should evaluate like `A * B * C`
 import Base: *
 using OrderedCollections
 

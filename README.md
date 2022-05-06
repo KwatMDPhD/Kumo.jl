@@ -23,3 +23,9 @@ Kumo.reset()
 ```
 
 3. :checkered_flag:
+
+# TODO: Cut and past connect APIs here to make a tutorial
+
+# TODO: Move TODOs to issues
+
+# TODO: Don't add existing connection

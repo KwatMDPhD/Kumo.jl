@@ -7,5 +7,3 @@ Kumo.plot()
 Kumo.connect_struct()
 
 Kumo.plot()
-
-Kumo.reset()
