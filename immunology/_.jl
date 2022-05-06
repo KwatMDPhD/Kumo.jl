@@ -1,7 +1,9 @@
 include("protein.jl")
 
+include("medication.jl")
+
 include("cell.jl")
 
-include("medication.jl")
+include("phenotype.jl")
 
 include("connection.jl")

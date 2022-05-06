@@ -1,36 +1,20 @@
 # ================================================================================================
-Macrophage * IL8
+# Cell, Protein >> Phenotype
 
-Th1 * IL3
+[Neutrophil, PECAM1] * Transmigration
 
-Th2 * IL3
-
-CD8T * IL3
+[TumorCell, Granzyme] * Apoptosis
 
 # ================================================================================================
-[MHC1, CytoplasmAntigen] * MHC1Antigen
+# Cell, Protein >> Cell
 
-[MHC2, EndosomeAntigen] * MHC2Antigen
+[Th0, CD4CD28Cascade, IL12] * Th1
 
-[CD8, MHC1Antigen] * CD8Signal
-
-[CD4, MHC2Antigen] * CD4Signal
-
-[CD28, CD80, CD86] * CD28Signal
+[Th0, CD4CD28Cascade, IL2] * Th2
 
 # ================================================================================================
-[CD8T, CD8Signal, CD28Signal] * ActivatedCD8T
+# Cell, Protein >> Protein
 
-# TODO
-[CD4Signal, CD28Signal] * ThSignal
-[Th0, ThSignal, IL2] * Th2
-[Th0, ThSignal, IL12] * Th1
-
-[CD16, FC] * CD16Signal
-
-[C3, FC] * [C3a, C3b]
-
-# ================================================================================================
 [Cell, Antigen] * CytoplasmAntigen
 
 [Neutrophil, Antigen] * EndosomeAntigen
@@ -39,14 +23,34 @@ CD8T * IL3
 
 [NaturalKiller, Antigen] * EndosomeAntigen
 
+[CD8T, CD8Cascade, CD28Cascade] * [Perforin, Granzyme]
+
 # ================================================================================================
-# TODO
-[Neutrophil, PECAM1] * Transmigration
+# Cell >> Protein
 
-# TODO
-[CD8T, CD8Signal] * ApoptosisSignal
+Macrophage * IL8
 
-# TODO
-[NaturalKiller, FC] * Granzyme
-[TumorCell, Granzyme] * Apoptosis
-[NaturalKiller, TumorCell] * Apoptosis
+CD8T * IL3
+
+Th1 * IL3
+
+Th2 * IL3
+
+# ================================================================================================
+# Protein >> Protein
+
+[C3, FC] * [C3a, C3b]
+
+[MHC1, CytoplasmAntigen] * MHC1Antigen
+
+[MHC2, EndosomeAntigen] * MHC2Antigen
+
+[CD8, MHC1Antigen] * CD8Cascade
+
+[CD4, MHC2Antigen] * CD4Cascade
+
+[CD28, CD80, CD86] * CD28Cascade
+
+[CD4Cascade, CD28Cascade] * CD4CD28Cascade
+
+[FCR, FC] * FCRCascade
