@@ -47,7 +47,7 @@ function plot()
         ED_,
         gr_ = gr_,
         grn_ = ["Node", "Has", "Acts", "React", "Original"],
-        grc_ = ["#20d9ba", "#4e40d8", "#ffa400", "#ff1968", "#ffddca"],
+        grc_ = ["#20d9ba", "#8db255", "#ffa400", "#ff1968", "#ffddca"],
         la = Dict("title" => Dict("text" => "Kumo")),
     )
 

@@ -1,4 +1,9 @@
 # ================================================================================================
+struct Virus end
+
+struct Bacterium end
+
+# ================================================================================================
 
 struct CD3 end
 
@@ -22,15 +27,33 @@ struct CD18
 
 end
 
+struct CD19 end
+
+struct CD21 end
+
 struct CD28 end
 
 struct CD28Cascade end
 
 struct CD4CD28Cascade end
 
+struct CD40 end
+
+struct CD40L end
+
+struct CD40Cascasde end
+
 struct CD80 end
 
 struct CD86 end
+
+struct CTLA4 end
+
+struct PD1 end
+
+struct PD1Cascade end
+
+struct PDL1 end
 
 # ================================================================================================
 
@@ -114,11 +137,17 @@ struct IgM
 
 end
 
+struct IgSwitchCascade end
+
 struct IgE
 
     fc::FC
 
 end
+
+struct IgER end
+
+struct IgERCascade end
 
 struct IgG
 
@@ -129,6 +158,8 @@ end
 struct IgA end
 
 struct IgD end
+
+struct IgComplex end
 
 # ================================================================================================
 
@@ -166,17 +197,38 @@ struct IFNg end
 
 struct TNFa end
 
+struct Leukotriene end
+
+struct Prostaglandin end
+
+
 # ================================================================================================
+
+struct IL1 end
 
 struct IL2 end
 
 struct IL3 end
 
+struct IL4 end
+
+struct IL5 end
+
+struct IL6 end
+
 struct IL8 end
+
+struct IL10 end
 
 struct IL12 end
 
+struct IL13 end
+
 # ================================================================================================
+
+struct Histamine end
+
+struct Protease end
 
 struct Perforin end
 

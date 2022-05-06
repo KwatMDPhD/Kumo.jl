@@ -7,6 +7,8 @@ struct Cell
 
 end
 
+struct HSC end
+
 struct Neutrophil
 
     fcr::FCR
@@ -21,6 +23,21 @@ struct Neutrophil
 
 end
 
+struct Eosinophil end
+
+struct Basophil
+
+    iger::IgER
+
+
+
+end
+
+struct MastCell
+
+    iger::IgER
+end
+
 struct Macrophage
 
     fcr::FCR
@@ -33,6 +50,10 @@ struct Macrophage
 
     mhc2::MHC2
 
+    il10::IL10
+
+    cd40::CD40
+
 end
 
 # ================================================================================================
@@ -41,6 +62,8 @@ struct NaturalKiller
     fcr::FCR
 
     granzyme::Granzyme
+
+    pd1::PD1
 
 end
 
@@ -63,6 +86,8 @@ struct Th1
 
     cd28::CD28
 
+    cd40l::CD40L
+
 end
 
 struct Th2
@@ -70,6 +95,10 @@ struct Th2
     cd4::CD4
 
     cd28::CD28
+
+    il10::IL10
+
+    cd40l::CD40L
 
 end
 
@@ -83,18 +112,32 @@ struct CD8T
 
     perforin::Perforin
 
+    pd1::PD1
+
 end
 
 struct Treg
 
     cd28::CD28
 
+    ctla4::CTLA4
+
 end
 
 # ================================================================================================
 struct BCell
 
+    cd19::CD19
+
+    cd21::CD21
+
+    cd40::CD40
+
+    pd1::PD1
+
 end
+
+struct PlasmaCell end
 
 struct MemoryB
 
@@ -117,11 +160,9 @@ struct TumorCell
 
     cytoplasmantigen::CytoplasmAntigen
 
+    pdl1::PDL1
+
 end
 
 # ================================================================================================
-struct Virus end
-
-struct Bacterium end
-
-# ================================================================================================
+APC = Union{Macrophage}
