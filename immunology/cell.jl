@@ -25,9 +25,11 @@ struct Macrophage
 
     fcr::FCR
 
-    cd80cd86::CD80CD86
+    cd80::CD80
 
-    mhc1::MHC2
+    cd86::CD86
+
+    mhc1::MHC1
 
     mhc2::MHC2
 
@@ -76,6 +78,10 @@ struct CD8T
     cd8::CD8
 
     cd28::CD28
+
+    granzyme::Granzyme
+
+    perforin::Perforin
 
 end
 
