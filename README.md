@@ -4,8 +4,22 @@
 
 ## Use
 
-1. Make a `.jl`.
+1. Make `my.jl`.
 
-2. `using Kumo; Kumo.go("the.jl")` :high_heel: :arrow_forward:
+2. :high_heel: :arrow_forward:
+
+```jl
+using Kumo
+
+include("my.jl")
+
+Kumo.plot()
+
+Kumo.connect_struct()
+
+Kumo.plot()
+
+Kumo.reset()
+```
 
 3. :checkered_flag:
