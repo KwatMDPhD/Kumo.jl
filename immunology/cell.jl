@@ -9,6 +9,12 @@ end
 
 struct HSC end
 
+struct RedBloodCell
+
+    cr1::CR1
+
+end
+
 struct Neutrophil
 
     fcr::FCR
@@ -29,13 +35,19 @@ struct Basophil
 
     iger::IgER
 
-
-
 end
 
 struct MastCell
 
     iger::IgER
+end
+
+struct Monocyte
+
+    cd4::CD4
+
+    cd14::CD14
+
 end
 
 struct Macrophage
@@ -56,6 +68,12 @@ struct Macrophage
 
 end
 
+struct ActivatedMacrophage end
+
+struct EpithelioidMacrophage end
+
+struct MultinucleatedGiantCell end
+
 # ================================================================================================
 struct NaturalKiller
 
@@ -69,6 +87,8 @@ end
 
 # ================================================================================================
 struct TCell
+
+    cd7::CD7
 
 end
 
@@ -102,6 +122,8 @@ struct Th2
 
 end
 
+struct Th17 end
+
 struct CD8T
 
     cd8::CD8
@@ -116,7 +138,7 @@ struct CD8T
 
 end
 
-struct Treg
+struct TReg
 
     cd28::CD28
 
@@ -128,6 +150,8 @@ end
 struct BCell
 
     cd19::CD19
+
+    cd20::CD20
 
     cd21::CD21
 
@@ -155,6 +179,8 @@ struct EndothelialCell
     icam1::ICAM1
 
 end
+
+struct Keratinocyte end
 
 struct TumorCell
 

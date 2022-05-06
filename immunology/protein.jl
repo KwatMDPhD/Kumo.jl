@@ -1,9 +1,4 @@
 # ================================================================================================
-struct Virus end
-
-struct Bacterium end
-
-# ================================================================================================
 
 struct CD3 end
 
@@ -11,9 +6,13 @@ struct CD4 end
 
 struct CD4Cascade end
 
+struct CD7 end
+
 struct CD8 end
 
 struct CD8Cascade end
+
+struct CD14 end
 
 struct Mac1 end
 
@@ -28,6 +27,8 @@ struct CD18
 end
 
 struct CD19 end
+
+struct CD20 end
 
 struct CD21 end
 
@@ -54,6 +55,8 @@ struct PD1 end
 struct PD1Cascade end
 
 struct PDL1 end
+
+struct CR1 end
 
 # ================================================================================================
 
@@ -187,6 +190,18 @@ struct C3a end
 
 struct C3b end
 
+struct C4a end
+
+struct C5a end
+
+struct C5b end
+
+struct OpsonizationComplex end
+
+struct C5Cascade end
+
+struct MembraneAttackComplex end
+
 # ================================================================================================
 
 struct Bradykinin end
@@ -201,6 +216,7 @@ struct Leukotriene end
 
 struct Prostaglandin end
 
+struct TGFb end
 
 # ================================================================================================
 
@@ -224,6 +240,12 @@ struct IL12 end
 
 struct IL13 end
 
+struct IL17 end
+
+struct IL22 end
+
+struct IL23 end
+
 # ================================================================================================
 
 struct Histamine end
@@ -233,5 +255,7 @@ struct Protease end
 struct Perforin end
 
 struct Granzyme end
+
+struct Lysozyme end
 
 # ================================================================================================
