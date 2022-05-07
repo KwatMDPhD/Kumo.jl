@@ -1,113 +1,3 @@
-Inflammation >> Phospholipid = Arachidonic acid >> $ = 5HPETE >> $ = (Lipoxin A4 & Lipoxin B4) >> v White blood cell @ Inflammation
-5HPETE = 5HETE
-N @ (5HETE & LtB4)
-
-LtB4 is the most potent attractor.
-
-ArachidonicAcid = Lt
-
-(LtC4 & LtD4 & LtE4) >> (Blood vessel ^ (Constiction & Permeability)) & (Bronchus ^ Spasm)
-SQUEEZE.
-
-Phospholipase A2 ^ ArachidonicAcid
-
-ArachidonicAcid = Prostaglandin H2 >> $ = (Thromboxane A2 & Prostacyclin & Prostaglandin D2 & Prostaglandin E2)
-
-5 Lipoxygenase ^ 5HPETE
-
-(COX1 & COX2) ^ Prostaglandin H2
-
-Platelet ^ Thromboxane A2 >> (Vasoconstriction & Platelet aggregation)
-
-Prostacyclin >> Opposite of Thromboxane A2
-
-(Prostaglandin D2 & Prostaglandin E2) >> (Vasodilation & ^ Vascular permeability)
-
-COX1 => Constituttive Prostaglandin ==> (Gastric mucosal acid neutralization, renal perfusion, platelet aggregation)
-
-CoX2 => Inducible prostaglandin ==> (Renal perfusion, vasodilation, tissue repair , pain!, inflammation)
-
-## Asthma
-
-Antigen >> Dendritic cell >> Th2 >> (IL5 & IL4 & IL13)
-Eo @ IL5
-(IL4 & IL13) >> B switch >> IgE >> Mast cell priming
-Re-exposure >> Mast cell degranulation >> (Histamine & Leukotrienes)
-
-MastCell.Histamine
-MastCell.Tryptase
-
-## CD4
-
-Th1 >> (IL1 & T4H & IFg)
-IFg >> ^ (Macrophage)
-(IFg & IL2) >> (CD8T & v Th2)
-
-Th2 >> (IL5 & T1H)
-IL5 >> (Eosi Differentiation & IgA switch)
-
-## Vaccine
-
-Plasma cell ^ IgM >> Shortlived
-
-Conjugate peptide >> APC >> Lymphnode >> CD4 T >> B >> Ig switch >> Memory B
-
-Re-exposure >> IgM IgG peak at the same time but IgG is way more
-
-## Interferon
-
-Most cell ^ (IFa & IFb) >> $ @ (Self & Nearby cell) >> ($ ^ (RNase L & Protein kinase R) & Apoptosis)
-(_dsRNA_ & RNase L) v RNA
-(_dsRNA_ & Protein kinase R) v eIF2 >> v Translation
-
-Antigen @ Nucleated cell Cytosol >> Proteasome >> Antigen fragment >> Transporter associated with antigen processing @ Endoplasmic reticulum >> @ Golgi >> @ Membrane >> ^ Antigen presentation
-MHC1 @ Endoplasmic reticulum >> Antigen fragment
-
-Antigen @ APC phagosome >> + lysosome >> + Endosome >> @ Membrane >> CD4
-MHC2 @ Golgi >> Endosome
-Invariant chain @ MHC2
-
-HLA-DP + HLA-DQ + HLA-DR = MHC2
-
-HLA-A + HLA-B + HLA-C = MHC1
-
-ReactiveLymphocyte.Perforin
-ReactiveLymphocyte.Granzyme
-
-(NK & CD8T) = ReactiveLymphocyte
-
-Neu.Elastase
-Mac.Elastase
-
-Eosi ^ MajorBasicProtein
-
-## Cancer
-
-CancerCell v MHC1
-CancerCell ^ CTLA4
-CancerCell ^ IL10
-
-## Stuff
-
-Neut.collagenase
-Neut.myeloperoxidase
-
-## Phagolysosome
-
-NADPH oxidase
-Reactive oxygen species, O2--
-
-Superoxide dismutase
-Hydrochloric acid, H2O2
-
-Catalase degrades H2O2
-
-Myeloperoxidase
-Hypochlorous acid, HClO
-
-Protease
-Collagenase
-
 ## Th0
 
 Th1 ^ (IL2, IFg, LymphotoxinBeta)
@@ -607,73 +497,6 @@ Corticosteroid >> v TF >> v phospholipase a2 >> v Inflammatory prostaglandin
 
 ##
 
-#function pain() = "The body feels pain." end
-#function apoptosis(Cell) = "$Cell undergoes apoptosis." end
-#function phagocytosis(eater, food) = "$eater is eating $food."
-#function contract(Muscle) = "Muslce contracts." end
-#function contain(Tissue) = "$Tissue contains its content." end
-
-#
-
-#bind(C3b, IgG) = nothing
-
-#
-
-#result(Tylenol) = inhibit(Pain)
-
-#
-
-#bind(Bradykinin, BloodVessel) = decrease(BloodVessel.SmoothMuscle), decrease(BloodVessel.Endothelium)
-#bind(Bradykinin, NonvascularSmoothMuscle) = increase(NonvascularSmoothMuscle)
-#result(Bradykinin) = activate(Pain)
-
-#
-
-#
-
-#function bind(IL8, CXCR) = activate(parent(CXCR)) end
-
-#
-
-#function endocytosis(Macrophage, Antigen) = activate(Macrophage) end
-#struct SmoothMuscle end
-
-#
-
-#function work(smoothmuscle::SmoothMuscle)
-
-# # TODO
-
-# contract(smoothmuscle)
-
-#end
-
-#
-
-#struct Endothelium end
-
-#
-
-#function work(endothelium::Endothelium)
-
-# # TODO
-
-# contain(endothelium)
-
-#end
-
-#
-
-#struct BloodVessel
-
-# smoothmuscle::SmoothMuscle
-
-# endothelium::Endothelium
-
-#end
-
-##
-
 Blood brain barrier endothelial cells has P-glycoprotein which guard the brain
 (Th1 & Th17) v Candida albicans mucocutaneous infection
 N v Candida albicans invasion
@@ -683,9 +506,29 @@ jlood vessel ^ Permeability >> N ^ Margination >> (LSelectin & ESelectin & PSele
 MemoryBCell ^ Anamnestic response >> T1H
 CD8TCell ^ (IFg & TNFa & Perforin & Granzymes)
 
-# ================================================================================================
-
 [NaturalKiller, FC] \* Granzyme
 IgA >> Milk >> Newborn intestinal mucosa
 IgG crosses placenta
 Lysozyme @ Peptidoglycan >> v Peptidoglycan
+Antigen @ Nucleated cell Cytosol >> Proteasome >> Antigen fragment >> Transporter associated with antigen processing @ Endoplasmic reticulum >> @ Golgi >> @ Membrane >> ^ Antigen presentation
+MHC1 @ Endoplasmic reticulum >> Antigen fragment
+
+Antigen @ APC phagosome >> + lysosome >> + Endosome >> @ Membrane >> CD4
+MHC2 @ Golgi >> Endosome
+Invariant chain @ MHC2
+
+## Phagolysosome
+
+NADPH oxidase
+Reactive oxygen species, O2--
+
+Superoxide dismutase
+Hydrochloric acid, H2O2
+
+Catalase degrades H2O2
+
+Myeloperoxidase
+Hypochlorous acid, HClO
+
+Protease
+Collagenase

@@ -8,13 +8,9 @@ function connect_struct()
 
         if ty != DataType
 
-            println("Skipping $ty $na")
-
             continue
 
         end
-
-        println("Adding $na")
 
         da1 = string(ev)
 

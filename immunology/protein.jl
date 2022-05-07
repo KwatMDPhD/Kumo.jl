@@ -1,5 +1,9 @@
 # ================================================================================================
 
+struct DSRNA end
+
+# ================================================================================================
+
 struct CD3 end
 
 struct CD4 end
@@ -208,13 +212,11 @@ struct Bradykinin end
 
 struct IFNa end
 
+struct IFNb end
+
 struct IFNg end
 
 struct TNFa end
-
-struct Leukotriene end
-
-struct Prostaglandin end
 
 struct TGFb end
 
@@ -250,7 +252,7 @@ struct IL23 end
 
 struct Histamine end
 
-struct Protease end
+struct Tryptase end
 
 struct Perforin end
 
@@ -258,4 +260,56 @@ struct Granzyme end
 
 struct Lysozyme end
 
+struct Elastase end
+
+struct Collagenase end
+
+struct Myeloperoxidase end
+
+struct MajorBasicProtein end
+
+struct RNaseL end
+
+struct ProteinKinaseR end
+
 # ================================================================================================
+
+struct Phospholipid end
+
+struct PhospholipaseA2 end
+
+struct COX1 end
+
+struct COX2 end
+
+struct ArachidonicAcid end
+
+struct _5Lipoxygenase end
+
+struct _5HPETE end
+
+struct _5HETE end
+
+struct LipoxinA4 end
+
+struct LipoxinB4 end
+
+struct LtB4 end
+
+struct LtC4 end
+
+struct LtD4 end
+
+struct LtE4 end
+
+struct Prostaglandin end
+
+struct ThromboxaneA2 end
+
+struct Prostacyclin end
+
+struct ProstaglandinH2 end
+
+struct ProstaglandinD2 end
+
+struct ProstaglandinE2 end

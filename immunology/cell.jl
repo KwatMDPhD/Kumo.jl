@@ -15,7 +15,13 @@ struct RedBloodCell
 
 end
 
+struct Platelet end
+
 struct Neutrophil
+
+    collagenase::Collagenase
+
+    myeloperoxidase::Myeloperoxidase
 
     fcr::FCR
 
@@ -68,6 +74,8 @@ struct Macrophage
 
 end
 
+struct DendriticCell end
+
 struct ActivatedMacrophage end
 
 struct EpithelioidMacrophage end
@@ -78,6 +86,8 @@ struct MultinucleatedGiantCell end
 struct NaturalKiller
 
     fcr::FCR
+
+    perforin::Perforin
 
     granzyme::Granzyme
 
@@ -130,9 +140,9 @@ struct CD8T
 
     cd28::CD28
 
-    granzyme::Granzyme
-
     perforin::Perforin
+
+    granzyme::Granzyme
 
     pd1::PD1
 

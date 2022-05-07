@@ -3,15 +3,27 @@
 #
 [HSC, IL3] * Proliferation
 
+[HSC, IL5] * Eosinophil
+
 [Neutrophil, C5a] * Migration
+
+[CXCR1, IL8] * Migration
+
+[CXCR2, IL8] * Migration
 
 [Neutrophil, PECAM1] * Transmigration
 
 [Neutrophil, IgComplex] * [Phagocytosis, T3H]
 
+[Neutrophil, _5HETE] * Migration
+
+[Neutrophil, LtB4] * Migration
+
 [Eosinophil, C3a] * Migration
 
 [Eosinophil, C5a] * Migration
+
+[Eosinophil, IL5] * Migration
 
 [Basophil, C3a] * Migration
 
@@ -27,7 +39,9 @@ ActivatedMacrophage * Granuloma
 
 [CD8T, PD1Cascade] * Apoptosis
 
-[CD8T, IL2] * Proliferation
+[CD8T, IL2, IFNg] * Proliferation
+
+[Th2, IL2, IFNg] * Decrease
 
 [NaturalKiller, IL2] * Proliferation
 
@@ -35,7 +49,11 @@ ActivatedMacrophage * Granuloma
 
 CD8T * T4H
 
-[TumorCell, Granzyme] * Apoptosis
+[TumorCell, Perforin, Granzyme] * Apoptosis
+
+TumorCell * "Decrease" * MHC1
+
+TumorCell * [CTLA4, IL10]
 
 [Keratinocyte, IFNg] * Proliferation
 
@@ -48,6 +66,22 @@ CD8T * T4H
 
 Histamine * [VascularPermeability, T1H]
 
+Bradykinin * [VascularPermeability, Vasodilation, BronchialConstriction, Pain]
+
+LtC4 * [VascularPermeability, Vasoconstriction, BronchialConstriction]
+
+LtD4 * [VascularPermeability, Vasoconstriction, BronchialConstriction]
+
+LtE4 * [VascularPermeability, Vasoconstriction, BronchialConstriction]
+
+ThromboxaneA2 * [Vasoconstriction, PlateletAggregation]
+
+Prostacyclin * Vasodilation
+
+ProstaglandinD2 * [Vasodilation, VascularPermeability]
+
+ProstaglandinE2 * [Vasodilation, VascularPermeability]
+
 IL1 * Sepsis
 
 IL6 * Sepsis
@@ -59,6 +93,7 @@ IgM * T2H
 IgG * T2H
 
 IgComplex * T3H
+
 
 # ================================================================================================
 # Cell, Protein >> Cell
@@ -85,10 +120,18 @@ IgComplex * T3H
 
 [BCell, IL5, IL13] * PlasmaCell
 
+[PlasmaCell, CD40Cascasde] * MemoryB
+
 # ================================================================================================
 # Cell, Protein >> Protein
 
 [Cell, Antigen] * CytoplasmAntigen
+
+[Cell, IFNa, IFNb] * [RNaseL, ProteinKinaseR]
+
+[DSRNA, RNaseL] * DecreasedTranscription
+
+[DSRNA, ProteinKinaseR] * DecreasedTranslation
 
 [Neutrophil, Antigen] * EndosomeAntigen
 
@@ -97,6 +140,8 @@ IgComplex * T3H
 [NaturalKiller, Antigen] * EndosomeAntigen
 
 [NaturalKiller, IL12] * IFNg
+
+NaturalKiller * [Perforin, Granzyme]
 
 [CD8T, CD8Cascade, CD28Cascade] * [Perforin, Granzyme]
 
@@ -110,9 +155,7 @@ IgComplex * T3H
 
 [Macrophage, CD40Cascasde] * [CD80, CD86, MHC2]
 
-PlasmaCell * IgE
-
-[MastCell, IgERCascade] * [Histamine, Protease, Leukotriene, Prostaglandin]
+[MastCell, IgERCascade] * [Histamine, Tryptase, ArachidonicAcid]
 
 [MastCell, C3a] * Histamine
 
@@ -120,28 +163,36 @@ PlasmaCell * IgE
 
 [MastCell, C5a] * Histamine
 
-[BCell, IgSwitchCascade, IL5] * [IgG, IgA]
+[PlasmaCell, IgSwitchCascade, IL5] * [IgG, IgA]
 
-[BCell, IgSwitchCascade, IL13] * [IgG, IgE]
+[PlasmaCell, IgSwitchCascade, IL13] * [IgG, IgE]
 
 [Keratinocyte, IFNg] * [IL1, TNFa]
 
 # ================================================================================================
 # Cell >> Protein
 
-Macrophage * [IL8, IL12, IL23, IFNg, TNFa, TGFb]
+Cell * [IFNa, IFNb]
+
+Platelet * [ThromboxaneA2]
+
+Neutrophil * Elastase
+
+Eosinophil * MajorBasicProtein
+
+Macrophage * [IL8, IL12, IL23, IFNg, TNFa, TGFb, Elastase]
 
 NaturalKiller * IL2
 
 CD8T * [IL2, IL3]
 
-Th1 * [IL2, IL3, TNFa, IFNg]
+Th1 * [IL1, IL2, IL3, TNFa, IFNg]
 
 Th2 * [IL3, IL4, IL5, IL13]
 
 Th17 * [IL17, IL22]
 
-BCell * IgM
+PlasmaCell * IgM
 
 # ================================================================================================
 # Protein >> Protein
@@ -193,3 +244,19 @@ IFNg * [MHC1, MHC2]
 Lysozyme * "Decrease" * Peptidoglycan
 
 [CD14, Lipopolysacharide] * Nothing
+
+[Phospholipid, PhospholipaseA2] * ArachidonicAcid
+
+[ArachidonicAcid, COX1] * ProstaglandinH2
+
+[ArachidonicAcid, COX2] * ProstaglandinH2
+
+ProstaglandinH2 * [ThromboxaneA2, Prostacyclin, ProstaglandinD2, ProstaglandinE2]
+
+[ArachidonicAcid, _5Lipoxygenase] * _5HPETE
+
+_5HPETE * [LipoxinA4, LipoxinB4]
+
+_5HPETE * _5HETE
+
+ArachidonicAcid * [LtB4, LtC4, LtD4, LtE4]
