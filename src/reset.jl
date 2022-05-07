@@ -1,6 +1,6 @@
 function reset()
 
-    global VE_ID = OrderedDict()
+    global VE_ = []
 
     global ED_ = []
 

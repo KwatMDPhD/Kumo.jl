@@ -2,15 +2,14 @@ module Kumo
 
 # TODO: Use >>; `A >> B >> C` should evaluate like `A * B * C`
 import Base: *
-using OrderedCollections
 
 using OnePiece
 
-VE_ID = OrderedDict()
+VE_ = []
 
 ED_ = []
 
-include("add_vertex.jl")
+include("add.jl")
 
 include("connect.jl")
 

@@ -1,54 +1,80 @@
-function plot()
+function make_vertex(ve)
 
-    ve_ = []
+    cl_ = []
 
-    gr_ = []
+    ty = typeof(ve)
 
-    for ve in keys(VE_ID)
+    if ty == DataType
 
-        if startswith(ve, "field")
+        push!(cl_, ty)
 
-            push!(ve_, "")
+    else
 
-            push!(gr_, 2)
+        push!(cl_, split(ve, ".")[1])
 
-        elseif startswith(ve, "act")
-
-            push!(ve_, "")
-
-            push!(gr_, 3)
-
-        elseif startswith(ve, "react")
-
-            push!(ve_, "")
-
-            push!(gr_, 4)
-
-        else
-
-            push!(ve_, split(ve, ".")[1])
-
-            if islowercase(ve[1])
-
-                push!(gr_, 5)
-
-            else
-
-                push!(gr_, 1)
-
-            end
-
-        end
+        push!(cl_, "e")
 
     end
 
-    OnePiece.network.plot(
-        ve_,
-        ED_,
-        gr_ = gr_,
-        grn_ = ["Node", "Has", "Acts", "React", "Original"],
-        grc_ = ["#20d9ba", "#8db255", "#ffa400", "#ff1968", "#ffddca"],
-        la = Dict("title" => Dict("text" => "Kumo")),
-    )
+    Dict("data" => Dict("id" => ve), "classes"=>cl_)
 
 end
+
+function make_edge((so, ta))
+
+    Dict("data" => Dict("source" => so, "target" => ta))
+
+end
+
+function plot()
+
+    "#ffddca"
+
+    ve_ = make_vertex.(VE_)
+
+    ed_ = make_edge.(ED_)
+
+    edge_line_color = "#171412"
+
+    e_size = 16
+
+    st_ = [
+        Dict(
+            "selector" => ".DataType",
+            "style" => Dict("background-color" => "#20d9ba", "label" => "data(id)"),
+        ),
+        Dict(
+            "selector" => ".e",
+            "style" => Dict("width" => e_size, "height" => e_size),
+        ),
+        Dict(
+            "selector" => ".has",
+            "style" => Dict("background-color" => "#8db255"),
+        ),
+        Dict(
+            "selector" => ".act",
+            "style" => Dict("background-color" => "#ffa400"),
+        ),
+        Dict(
+            "selector" => ".react",
+            "style" => Dict("background-color" => "#ff1968"),
+        ),
+        Dict(
+            "selector" => "edge",
+            "style" => Dict(
+                "width" => 2,
+                "curve-style" => "bezier",
+                "line-color" => edge_line_color,
+                "target-arrow-color" => edge_line_color,
+                "opacity" => 0.32,
+                "target-arrow-shape" => "vee",
+            ),
+        ),
+    ]
+
+    la = Dict("name" => "cose")
+
+    OnePiece.network.plot([ve_; ed_], st_, la)
+
+end
+

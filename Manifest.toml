@@ -106,9 +106,9 @@ version = "1.3.4"
 
 [[deps.DataStructures]]
 deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
-git-tree-sha1 = "3daef5523dd2e769dad2365274f760ff5f282c7d"
+git-tree-sha1 = "cc1a8e22627f33c789ab60b36a9132ac050bbf75"
 uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
-version = "0.18.11"
+version = "0.18.12"
 
 [[deps.DataValueInterfaces]]
 git-tree-sha1 = "bfc1187b79289637fa0ef6d4436ebdfe6905cbd6"
@@ -141,9 +141,9 @@ uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 
 [[deps.Distributions]]
 deps = ["ChainRulesCore", "DensityInterface", "FillArrays", "LinearAlgebra", "PDMats", "Printf", "QuadGK", "Random", "SparseArrays", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns", "Test"]
-git-tree-sha1 = "f206814c860c2a909d2a467af0484d08edd05ee7"
+git-tree-sha1 = "8a6b49396a4058771c5c072239b2e0a76e2e898c"
 uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"
-version = "0.25.57"
+version = "0.25.58"
 
 [[deps.DocStringExtensions]]
 deps = ["LibGit2"]
@@ -413,9 +413,9 @@ version = "1.10.8"
 
 [[deps.OnePiece]]
 deps = ["BenchmarkTools", "CSV", "CodecZlib", "DataFrames", "DefaultApplication", "Distributions", "Graphs", "JSON", "JSON3", "KernelDensity", "Mmap", "NetworkLayout", "OrderedCollections", "Printf", "Random", "Scratch", "Statistics", "StatsBase", "TOML", "XLSX"]
-path = "/Users/kwat/craft/OnePiece.jl/"
+path = "../OnePiece.jl"
 uuid = "1fe83854-81c0-42f7-afc9-71ba9af673ca"
-version = "0.7.4"
+version = "0.7.5"
 
 [[deps.OpenBLAS_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
@@ -604,9 +604,9 @@ version = "1.0.0"
 
 [[deps.StructArrays]]
 deps = ["Adapt", "DataAPI", "StaticArrays", "Tables"]
-git-tree-sha1 = "8f705dd141733d79aa2932143af6c6e0b6cea8df"
+git-tree-sha1 = "e75d82493681dfd884a357952bbd7ab0608e1dc3"
 uuid = "09ab397b-f2b6-538f-b94a-2f83cf4a842a"
-version = "0.6.6"
+version = "0.6.7"
 
 [[deps.StructTypes]]
 deps = ["Dates", "UUIDs"]
