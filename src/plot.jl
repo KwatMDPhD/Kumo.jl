@@ -40,12 +40,16 @@ function plot()
 
     st_ = [
         Dict(
+            "selector" => "node",
+            "style" => Dict("padding" => "16%"),
+        ),
+        Dict(
             "selector" => ".DataType",
-            "style" => Dict("background-color" => "#20d9ba", "label" => "data(id)"),
+            "style" => Dict("background-color" => "#20d9ba", "border-width"=>1.6, "border-color" => "#ebf6f7", "label" => "data(id)"),
         ),
         Dict(
             "selector" => ".e",
-            "style" => Dict("width" => e_size, "height" => e_size),
+            "style" => Dict("width" => e_size, "height" => e_size, "shape" => "triangle"),
         ),
         Dict(
             "selector" => ".has",
