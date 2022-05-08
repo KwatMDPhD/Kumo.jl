@@ -16,7 +16,7 @@ function make_vertex(ve)
 
     end
 
-    Dict("data" => Dict("id" => ve), "classes"=>cl_)
+    Dict("data" => Dict("id" => ve), "classes" => cl_)
 
 end
 
@@ -26,9 +26,7 @@ function make_edge((so, ta))
 
 end
 
-function plot()
-
-    "#ffddca"
+function plot(ou = "")
 
     ve_ = make_vertex.(VE_)
 
@@ -41,44 +39,36 @@ function plot()
     st_ = [
         Dict(
             "selector" => "node",
-            "style" => Dict("padding" => "16%"),
+            "style" => Dict("border-width" => 1, "border-color" => "#ebf6f7"),
         ),
         Dict(
             "selector" => ".DataType",
-            "style" => Dict("background-color" => "#20d9ba", "border-width"=>1.6, "border-color" => "#ebf6f7", "label" => "data(id)"),
+            "style" => Dict("background-color" => "#20d9ba", "label" => "data(id)"),
         ),
         Dict(
             "selector" => ".e",
             "style" => Dict("width" => e_size, "height" => e_size, "shape" => "triangle"),
         ),
-        Dict(
-            "selector" => ".has",
-            "style" => Dict("background-color" => "#8db255"),
-        ),
-        Dict(
-            "selector" => ".act",
-            "style" => Dict("background-color" => "#ffa400"),
-        ),
-        Dict(
-            "selector" => ".react",
-            "style" => Dict("background-color" => "#ff1968"),
-        ),
+        Dict("selector" => ".has", "style" => Dict("background-color" => "#8db255")),
+        Dict("selector" => ".act", "style" => Dict("background-color" => "#ffa400")),
+        Dict("selector" => ".react", "style" => Dict("background-color" => "#ff1968")),
         Dict(
             "selector" => "edge",
             "style" => Dict(
                 "width" => 2,
-                "curve-style" => "bezier",
+                "curve-style" => "bezier",#"straight-triangle",
                 "line-color" => edge_line_color,
+                "target-arrow-shape" => "triangle-backcurve",
                 "target-arrow-color" => edge_line_color,
+                "source-distance-from-node" => 2,
+                "target-distance-from-node" => 2,
                 "opacity" => 0.32,
-                "target-arrow-shape" => "vee",
             ),
         ),
     ]
 
     la = Dict("name" => "cose")
 
-    OnePiece.network.plot([ve_; ed_], st_, la)
+    OnePiece.network.plot([ve_; ed_], st_, la, ou)
 
 end
-

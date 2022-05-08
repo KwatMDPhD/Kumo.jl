@@ -4,6 +4,6 @@ include("how.jl")
 
 Kumo.plot()
 
-Kumo.struct>>()
+Kumo.struct >> ()
 
 Kumo.plot()
