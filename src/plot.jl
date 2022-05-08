@@ -77,7 +77,7 @@ function plot(ou = "")
         ),
     ]
 
-    la = Dict("name" => "cose")
+    la = Dict("name" => "cose", "animate" => false)
 
     OnePiece.network.plot([ve_; ed_], st_, la, ou)
 
