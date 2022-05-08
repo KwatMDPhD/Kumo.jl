@@ -12,6 +12,8 @@ function connect_struct()
 
         end
 
+        #add(ev)
+
         da3_ = [da for da in ev.types]
 
         if 0 < length(da3_)

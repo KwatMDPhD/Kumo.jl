@@ -34,20 +34,30 @@ function plot(ou = "")
 
     edge_line_color = "#171412"
 
-    e_size = 16
+    size1 = 16
+
+    size2 = size1 * 2 / 3
+
+    size3 = size1 / 10
 
     st_ = [
         Dict(
             "selector" => "node",
-            "style" => Dict("border-width" => 1, "border-color" => "#ebf6f7"),
+            "style" =>
+                Dict("border-width" => 1, "border-color" => "#ebf6f7", "font-size" => size2),
         ),
         Dict(
             "selector" => ".DataType",
-            "style" => Dict("background-color" => "#20d9ba", "label" => "data(id)"),
+            "style" => Dict(
+                "width" => size1,
+                "height" => size1,
+                "background-color" => "#20d9ba",
+                "label" => "data(id)",
+            ),
         ),
         Dict(
             "selector" => ".e",
-            "style" => Dict("width" => e_size, "height" => e_size, "shape" => "triangle"),
+            "style" => Dict("width" => size2, "height" => size2, "shape" => "circle"),
         ),
         Dict("selector" => ".has", "style" => Dict("background-color" => "#8db255")),
         Dict("selector" => ".act", "style" => Dict("background-color" => "#ffa400")),
@@ -55,13 +65,13 @@ function plot(ou = "")
         Dict(
             "selector" => "edge",
             "style" => Dict(
-                "width" => 2,
+                "width" => size3,
                 "curve-style" => "bezier",#"straight-triangle",
                 "line-color" => edge_line_color,
                 "target-arrow-shape" => "triangle-backcurve",
                 "target-arrow-color" => edge_line_color,
-                "source-distance-from-node" => 2,
-                "target-distance-from-node" => 2,
+                "source-distance-from-node" => size3,
+                "target-distance-from-node" => size3,
                 "opacity" => 0.32,
             ),
         ),
