@@ -4,15 +4,13 @@ function connect_struct()
 
         ev = Base.eval(Main, na)
 
-        ty = typeof(ev)
-
-        if ty != DataType
+        if !(ev isa DataType)
 
             continue
 
         end
 
-        #add(ev)
+        add(ev)
 
         da3_ = [da for da in ev.types]
 

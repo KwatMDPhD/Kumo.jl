@@ -2,17 +2,15 @@ function make_vertex(ve)
 
     cl_ = []
 
-    ty = typeof(ve)
+    if ve isa DataType
 
-    if ty == DataType
-
-        push!(cl_, ty)
+        push!(cl_, "no")
 
     else
 
-        push!(cl_, split(ve, ".")[1])
+        push!(cl_, "ed")
 
-        push!(cl_, "e")
+        push!(cl_, split(ve, ".")[1])
 
     end
 
@@ -26,7 +24,7 @@ function make_edge((so, ta))
 
 end
 
-function plot(ou = "")
+function plot(; st_ = [], ou = "")
 
     ve_ = make_vertex.(VE_)
 
@@ -34,50 +32,57 @@ function plot(ou = "")
 
     edge_line_color = "#171412"
 
-    size1 = 16
+    no_si = 16
 
-    size2 = size1 * 2 / 3
+    noe_si = 8
 
-    size3 = size1 / 10
+    ed_wi = 2
 
     st_ = [
         Dict(
             "selector" => "node",
-            "style" =>
-                Dict("border-width" => 1, "border-color" => "#ebf6f7", "font-size" => size2),
-        ),
-        Dict(
-            "selector" => ".DataType",
             "style" => Dict(
-                "width" => size1,
-                "height" => size1,
-                "background-color" => "#20d9ba",
-                "label" => "data(id)",
+                "border-width" => 1,
+                "border-color" => "#ebf6f7",
+                "font-size" => no_si * 2 / 3,
             ),
         ),
+        #
         Dict(
-            "selector" => ".e",
-            "style" => Dict("width" => size2, "height" => size2, "shape" => "circle"),
+            "selector" => ".no",
+            "style" => Dict("height" => no_si, "width" => no_si, "label" => "data(id)"),
         ),
-        Dict("selector" => ".has", "style" => Dict("background-color" => "#8db255")),
-        Dict("selector" => ".act", "style" => Dict("background-color" => "#ffa400")),
-        Dict("selector" => ".react", "style" => Dict("background-color" => "#ff1968")),
+        #
+        Dict(
+            "selector" => ".ed",
+            "style" => Dict("height" => noe_si, "width" => noe_si, "shape" => "triangle"),
+        ),
+        #
         Dict(
             "selector" => "edge",
             "style" => Dict(
-                "width" => size3,
+                "width" => ed_wi,
                 "curve-style" => "bezier",#"straight-triangle",
                 "line-color" => edge_line_color,
                 "target-arrow-shape" => "triangle-backcurve",
                 "target-arrow-color" => edge_line_color,
-                "source-distance-from-node" => size3,
-                "target-distance-from-node" => size3,
+                "source-distance-from-node" => ed_wi,
+                "target-distance-from-node" => ed_wi,
                 "opacity" => 0.32,
             ),
         ),
+        st_...,
     ]
 
-    la = Dict("name" => "cose", "animate" => false)
+    la = Dict(
+        "name" => "cose",
+        "animate" => false,
+        "padding" => 8,
+        "componentSpacing" => 32,
+        "nodeRepulsion" => 8000,
+        "idealEdgeLength" => 16,
+        "numIter" => 10000,
+    )
 
     OnePiece.network.plot([ve_; ed_], st_, la, ou)
 
