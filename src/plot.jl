@@ -1,34 +1,8 @@
-function make_vertex(ve)
-
-    cl_ = []
-
-    if ve isa DataType
-
-        push!(cl_, "no")
-
-    else
-
-        push!(cl_, "ed")
-
-        push!(cl_, split(ve, ".")[1])
-
-    end
-
-    Dict("data" => Dict("id" => ve), "classes" => cl_)
-
-end
-
-function make_edge((so, ta))
-
-    Dict("data" => Dict("source" => so, "target" => ta))
-
-end
-
 function plot(; st_ = [], ou = "")
 
-    ve_ = make_vertex.(VE_)
+    ve_ = make_element.(VE_)
 
-    ed_ = make_edge.(ED_)
+    ed_ = make_element.(ED_)
 
     edge_line_color = "#171412"
 
@@ -47,17 +21,14 @@ function plot(; st_ = [], ou = "")
                 "font-size" => no_si * 2 / 3,
             ),
         ),
-        #
         Dict(
             "selector" => ".no",
             "style" => Dict("height" => no_si, "width" => no_si, "label" => "data(id)"),
         ),
-        #
         Dict(
             "selector" => ".ed",
             "style" => Dict("height" => noe_si, "width" => noe_si, "shape" => "triangle"),
         ),
-        #
         Dict(
             "selector" => "edge",
             "style" => Dict(
@@ -74,11 +45,15 @@ function plot(; st_ = [], ou = "")
         st_...,
     ]
 
+    he = 1000
+
     la = Dict(
         "name" => "cose",
         "animate" => false,
-        "padding" => 8,
-        "componentSpacing" => 32,
+        "padding" => 16,
+        "boundingBox" =>
+            Dict("x1" => 0, "y1" => 0, "h" => he, "w" => he * MathConstants.golden),
+        "componentSpacing" => 40,
         "nodeRepulsion" => 8000,
         "idealEdgeLength" => 16,
         "numIter" => 10000,

@@ -15,6 +15,8 @@ include("connect.jl")
 
 include("connect_struct.jl")
 
+include("make_element.jl")
+
 include("plot.jl")
 
 include("reset.jl")
