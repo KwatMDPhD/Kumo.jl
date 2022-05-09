@@ -24,8 +24,28 @@ Kumo.reset()
 
 3. :checkered_flag:
 
-# TODO: Cut and past connect APIs here to make a tutorial
+## Connect
 
-# TODO: Move TODOs to issues
+Using default edges: `act` and `react`
 
-# TODO: Don't add existing connection
+```jl
+A * B
+
+[A, B, ...] * C
+
+A * [B, C, ...]
+
+[A, B, ...] * [C, D, ...]
+```
+
+Using custom edge
+
+```jl
+A * "how" * B
+
+[A, B, ...] * "combine" * C
+
+A * "split" * [B, C, ...]
+
+[A, B, ...] * "generate" * [C, D, ...]
+```

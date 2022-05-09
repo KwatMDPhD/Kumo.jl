@@ -62,9 +62,9 @@ version = "1.14.0"
 
 [[deps.ChangesOfVariables]]
 deps = ["ChainRulesCore", "LinearAlgebra", "Test"]
-git-tree-sha1 = "bf98fa45a0a4cee295de98d4c1462be26345b9a1"
+git-tree-sha1 = "1e315e3f4b0b7ce40feded39c73049692126cf53"
 uuid = "9e997f8a-9a97-42d5-a9f1-ce6bfc15e2c0"
-version = "0.1.2"
+version = "0.1.3"
 
 [[deps.CodeTracking]]
 deps = ["InteractiveUtils", "UUIDs"]
@@ -275,9 +275,9 @@ version = "0.13.6"
 
 [[deps.InverseFunctions]]
 deps = ["Test"]
-git-tree-sha1 = "91b5dcf362c5add98049e6c29ee756910b03051d"
+git-tree-sha1 = "336cc738f03e069ef2cac55a104eb823455dca75"
 uuid = "3587e190-3f89-42d0-90ee-14403ec27112"
-version = "0.1.3"
+version = "0.1.4"
 
 [[deps.InvertedIndices]]
 git-tree-sha1 = "bee5f1ef5bf65df56bdd2e40447590b272a5471f"
@@ -431,7 +431,9 @@ version = "1.10.8"
 
 [[deps.OnePiece]]
 deps = ["BenchmarkTools", "CSV", "CodecZlib", "DataFrames", "DefaultApplication", "Distributions", "Graphs", "JSON", "JSON3", "KernelDensity", "Mmap", "NetworkLayout", "OrderedCollections", "Printf", "Random", "Scratch", "Statistics", "StatsBase", "TOML", "XLSX"]
-path = "../OnePiece.jl"
+git-tree-sha1 = "e40591f5910713947c7e118801bd388e874b5619"
+repo-rev = "main"
+repo-url = "https://github.com/KwatMDPhD/OnePiece.jl"
 uuid = "1fe83854-81c0-42f7-afc9-71ba9af673ca"
 version = "0.7.5"
 
@@ -456,9 +458,9 @@ version = "1.4.1"
 
 [[deps.PDMats]]
 deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
-git-tree-sha1 = "3114946c67ef9925204cc024a73c9e679cebe0d7"
+git-tree-sha1 = "c8c62e4aa5bbd0e48bafe294d4325fc87194a5ed"
 uuid = "90014a1f-27ba-587c-ab20-58faa44d9150"
-version = "0.11.8"
+version = "0.11.9"
 
 [[deps.Parsers]]
 deps = ["Dates"]
