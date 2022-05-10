@@ -1,6 +1,6 @@
 # Kumo.jl
 
-:spider: :spider_web:
+:spider:
 
 ## Use
 

@@ -6,11 +6,11 @@ function plot(; st_ = [], ou = "")
 
     edge_line_color = "#171412"
 
-    no_si = 16
+    no_si = 48
 
-    noe_si = 8
+    noe_si = no_si / 2
 
-    ed_wi = 2
+    ed_wi = no_si / 8
 
     st_ = [
         Dict(
