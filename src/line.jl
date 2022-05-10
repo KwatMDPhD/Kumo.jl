@@ -1,4 +1,4 @@
-function add(ve)
+function line(ve)
 
     if !(ve in VE_)
 
@@ -8,13 +8,13 @@ function add(ve)
 
 end
 
-function add(ve1, ve2)
+function line(ve1, ve2)
 
     ed = (ve1, ve2)
 
     for ve in ed
 
-        add(ve)
+        line(ve)
 
     end
 
@@ -24,24 +24,30 @@ function add(ve1, ve2)
 
     end
 
+    ve2
+
 end
 
-function add(ve1_::Vector, ve2)
+function line(ve1_::Vector, ve2)
 
     for ve1 in ve1_
 
-        add(ve1, ve2)
+        line(ve1, ve2)
 
     end
+
+    ve2
 
 end
 
-function add(ve1, ve2_::Vector)
+function line(ve1, ve2_::Vector)
 
     for ve2 in ve2_
 
-        add(ve1, ve2)
+        line(ve1, ve2)
 
     end
+
+    ve2_
 
 end

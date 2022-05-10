@@ -1,7 +1,6 @@
 module Kumo
 
-# TODO: Use >>; `A >> B >> C` should evaluate like `A * B * C`
-import Base: *
+import Base: >>
 
 using OnePiece
 
@@ -9,11 +8,11 @@ VE_ = []
 
 ED_ = []
 
-include("add.jl")
+include("line.jl")
 
-include("connect.jl")
+include("hold.jl")
 
-include("connect_struct.jl")
+include("react.jl")
 
 include("make_element.jl")
 

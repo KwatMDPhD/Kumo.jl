@@ -1,12 +1,10 @@
-function plot(; st_ = [], ou = "")
+function plot(; no_si = 32, st_ = [], ou = "")
 
     ve_ = make_element.(VE_)
 
     ed_ = make_element.(ED_)
 
     edge_line_color = "#171412"
-
-    no_si = 48
 
     noe_si = no_si / 2
 
@@ -33,7 +31,7 @@ function plot(; st_ = [], ou = "")
             "selector" => "edge",
             "style" => Dict(
                 "width" => ed_wi,
-                "curve-style" => "bezier",#"straight-triangle",
+                "curve-style" => "straight-triangle",
                 "line-color" => edge_line_color,
                 "target-arrow-shape" => "triangle-backcurve",
                 "target-arrow-color" => edge_line_color,

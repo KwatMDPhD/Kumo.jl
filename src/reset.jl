@@ -1,7 +1,7 @@
 function reset()
 
-    global VE_ = []
+    empty!(VE_)
 
-    global ED_ = []
+    empty!(ED_)
 
 end
