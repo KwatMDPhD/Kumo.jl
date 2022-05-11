@@ -4,18 +4,16 @@
 
 ## Use
 
-1. Make `my.jl`.
+1. Make `my.ito.jl`, like `example.ito.jl`.
 
 2. :high_heel: :arrow_forward:
 
 ```jl
 using Kumo
 
-include("my.jl")
+include("my.ito.jl")
 
-Kumo.plot()
-
-Kumo.connect_struct()
+Kumo.hold()
 
 Kumo.plot()
 
@@ -29,23 +27,23 @@ Kumo.reset()
 Using default edges: `act` and `react`
 
 ```jl
-A * B
+A >> B
 
-[A, B, ...] * C
+[A, B] >> C
 
-A * [B, C, ...]
+A >> [B, C]
 
-[A, B, ...] * [C, D, ...]
+[A, B] >> [C, D]
 ```
 
 Using custom edge
 
 ```jl
-A * "how" * B
+A >> "how" >> B
 
-[A, B, ...] * "combine" * C
+[A, B] >> "combine" >> C
 
-A * "split" * [B, C, ...]
+A >> "split" >> [B, C]
 
-[A, B, ...] * "generate" * [C, D, ...]
+[A, B] >> "wow" >> [C, D]
 ```

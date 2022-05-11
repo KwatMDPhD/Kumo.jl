@@ -1,70 +1,49 @@
-# [A, B] >> ""
-function >>(ve1_::Vector{DataType}, st::String)
+function >>(ve1, ve2)
 
-    line(ve1_, st)
+    add(ve1, ve2)
 
-end
-
-# "" >> [A, B]
-function >>(st::String, ve2_::Vector{DataType})
-
-    line(st, ve2_)
+    ve2
 
 end
 
-# A >> ""
-function >>(ve1::DataType, st::String)
+function >>(ve1_::Vector, ve2)
 
-    [ve1] >> st
+    for ve1 in ve1_
 
-end
-
-
-# "" >> A
-function >>(st::String, ve2::DataType)
-
-    st >> [ve2]
-
-end
-
-# [A, B] >> [C, D]
-function >>(ve1_::Vector{DataType}, ve3_::Vector{DataType})
-
-    if length(ve1_) == 1
-
-        st = "act"
-
-    else
-
-        st = "react"
+        add(ve1, ve2)
 
     end
 
-    st = "$st.$(length(VE_) + 1)"
-
-    ve1_ >> st
-
-    st >> ve3_
+    ve2
 
 end
 
-# A >> B
-function >>(ve1::DataType, ve3::DataType)
+function >>(ve1, ve2_::Vector)
 
-    [ve1] >> [ve3]
+    for ve2 in ve2_
 
-end
+        add(ve1, ve2)
 
-# [A, B] >> C
-function >>(ve1_::Vector{DataType}, ve3::DataType)
+    end
 
-    ve1_ >> [ve3]
+    ve2_
 
 end
 
-# A >> [B, C]
-function >>(ve1::DataType, ve3_::Vector{DataType})
+function make_vertex2(ve1::DataType)
 
-    [ve1] >> ve3_
+    "act.$ve1"
+
+end
+
+function make_vertex2(ve1_::Vector{DataType})
+
+    "react.$(join(ve1_, "_"))"
+
+end
+
+function >>(ve1::Union{DataType, Vector{DataType}}, ve3::Union{DataType, Vector{DataType}})
+
+    ve1 >> make_vertex2(ve1) >> ve3
 
 end

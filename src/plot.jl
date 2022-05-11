@@ -27,6 +27,8 @@ function plot(; no_si = 32, st_ = [], ou = "")
             "selector" => ".ed",
             "style" => Dict("height" => noe_si, "width" => noe_si, "shape" => "triangle"),
         ),
+        Dict("selector" => ".act", "style" => Dict("background-color" => "#ffa400")),
+        Dict("selector" => ".react", "style" => Dict("background-color" => "#ff1968")),
         Dict(
             "selector" => "edge",
             "style" => Dict(

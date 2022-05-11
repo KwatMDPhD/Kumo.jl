@@ -4,13 +4,15 @@ function hold()
 
         ev = Base.eval(Main, na)
 
-        if !(ev isa DataType)
+        if ev isa DataType
 
-            continue
+            for ty in ev.types
+
+                add(ev, ty)
+
+            end
 
         end
-
-        line(ev, [da for da in ev.types])
 
     end
 

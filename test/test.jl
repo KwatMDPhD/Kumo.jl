@@ -28,14 +28,26 @@ struct X end
 struct Y end
 struct Z end
 
-E * F
+A >> "hello"
+"hello" >> B
+A >> "hello" >> B
+A >> ("hello" >> B)
+[A, B] >> "hello"
+[A, B] >> "hello" >> [C, D]
 
-[G, H] * I
+A >> B
+[A, B] >> C
+A >> [B, C]
+[A, B] >> [C, D]
+A >> B >> C
+A >> (B >> C)
+[A, B] >> C >> D
+A >> [B, C] >> D
+A >> B >> [C, D]
+A >> [B, C] >> [D, E]
 
-J * [K, L]
+A >> B
+A >> C
 
-[M, N] * [O, P]
-
-[Q, R, S] * "fight" * [T, U, V]
-
-W * "split" * [X, Y, Z]
+[A, B] >> C
+[A, B] >> D
