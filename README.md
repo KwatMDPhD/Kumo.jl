@@ -1,19 +1,20 @@
 # Kumo.jl
 
-:spider:
+"Kumo" means spider :spider:.
+"Ito" means string :spider_web:.
 
 ## Use
 
 1. Make `my.ito.jl`, like `example.ito.jl`.
 
-2. :high_heel: :arrow_forward:
+2. Ready, load, and go :high_heel:
 
 ```jl
 using Kumo
 
 include("my.ito.jl")
 
-Kumo.hold()
+Kumo.field()
 
 Kumo.plot()
 
@@ -45,5 +46,13 @@ A >> "how" >> B
 
 A >> "split" >> [B, C]
 
-[A, B] >> "wow" >> [C, D]
+[A, B] >> "shuffle" >> [C, D]
 ```
+
+## Design
+
+Structs are stable objects.
+
+Structs physically connect with their fields.
+
+Edges mean reaction (reactants, if all present, increase the probability of the products.)
