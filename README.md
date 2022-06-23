@@ -1,7 +1,6 @@
 # Kumo.jl
 
-"Kumo" means spider :spider:.
-"Ito" means string :spider_web:.
+"Kumo" :spider:
 
 ## Use
 
